@@ -51,6 +51,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-siz
 .wrap{max-width:1120px;margin-inline:auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:16px}
 
 .brand{display:flex;flex-direction:column;gap:4px}
+.brandtop{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.credit{margin:0 0 0 auto;font:700 12.5px var(--font-display);color:var(--ink-2);white-space:nowrap}
 .eyebrow{margin:0;font:700 12.5px var(--font-display);letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
 h1{margin:0;font:800 clamp(25px,6vw,34px)/1.1 var(--font-display);text-wrap:balance}
 .lede{margin:0;color:var(--ink-2);max-width:60ch}
@@ -134,7 +136,7 @@ h1{margin:0;font:800 clamp(25px,6vw,34px)/1.1 var(--font-display);text-wrap:bala
 
 <div class="wrap">
   <header class="brand">
-    <p class="eyebrow">Driver's pocket guide</p>
+    <div class="brandtop"><p class="eyebrow">Driver's pocket guide</p><p class="credit">Developer: Laminedo</p></div>
     <h1>Washington City Tour Guide</h1>
     <p class="lede">Where to eat, stay and visit in eight Washington cities, with prices and one-tap directions.</p>
   </header>
