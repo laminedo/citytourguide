@@ -52,7 +52,11 @@
       "t": [
        "icon"
       ],
-      "q": "Glo's, 928 E Barbara Bailey Way, Seattle, WA"
+      "q": "Glo's, 928 E Barbara Bailey Way, Seattle, WA",
+      "osm": "N10899610891",
+      "ad": "928 East Barbara Bailey Way, Seattle, WA 98122",
+      "web": "https://www.glosseattle.com/",
+      "hours": "Mo-Su,PH 08:00-15:00; Nov Th[4] off; Dec 25 off"
      },
      {
       "id": "seattle-breakfast-piroshky-piroshky",
@@ -125,7 +129,11 @@
       "l": 2,
       "pr": "$16–26",
       "t": [],
-      "q": "Skillet Diner, 1400 E Union St, Seattle, WA"
+      "q": "Skillet Diner, 1400 E Union St, Seattle, WA",
+      "osm": "N2660559612",
+      "ad": "Thomas Street, Seattle, WA 98121",
+      "web": "http://skilletcounter.com",
+      "hours": "Mo-Th,Su 10:00-19:00; Fr-Sa 10:00-20:00"
      },
      {
       "id": "seattle-breakfast-geraldine-s-counter",
@@ -400,7 +408,11 @@
       "pr": "$110–190",
       "t": [
        "icon"
-      ]
+      ],
+      "osm": "W222581715",
+      "ad": "1106 North 80th Street, Seattle, WA 98103",
+      "web": "https://mallorypaint.com/",
+      "hours": "Mo-Fr 07:00-18:00; Sa 08:00-18:00; Su 10:00-16:00"
      },
      {
       "id": "seattle-stay-coast-gateway-hotel",
@@ -425,7 +437,8 @@
       "l": 2,
       "pr": "$150–260",
       "t": [],
-      "osm_q": "citizenM"
+      "osm_q": "citizenM",
+      "osm_src": "manual"
      },
      {
       "id": "seattle-stay-the-maxwell-hotel",
@@ -639,7 +652,9 @@
       "ok": 1,
       "osm_q": "Museum of Flight",
       "hours": "Mo-Su 10:00-17:00",
-      "hours_src": "manual"
+      "hours_src": "manual",
+      "osm": "W34746147",
+      "ad": "9404 East Marginal Way South, Seattle, WA 98108"
      },
      {
       "id": "seattle-indoor-seattle-art-museum",
@@ -665,7 +680,10 @@
       "t": [
        "icon"
       ],
-      "osm_q": "Underground Tour"
+      "osm_q": "Underground Tour",
+      "osm": "N825301150",
+      "ad": "614 1st Avenue, Seattle, WA 98104",
+      "web": "https://undergroundtour.com/"
      },
      {
       "id": "seattle-indoor-sky-view-observatory",
@@ -771,7 +789,10 @@
       ],
       "q": "Seattle Ferry Terminal, Colman Dock, 801 Alaskan Way, Seattle, WA",
       "top": 1,
-      "osm_q": "Seattle Ferry Terminal"
+      "osm_q": "Seattle Ferry Terminal",
+      "osm": "N661057175",
+      "ad": "Colman Dock, Seattle, WA 98174",
+      "web": "https://wsdot.wa.gov/ferries/vesselwatch/TerminalDetail.aspx?terminalid=7"
      },
      {
       "id": "seattle-outdoor-waterfront-park-and-overlook-walk",
@@ -785,7 +806,9 @@
        "fam"
       ],
       "q": "Overlook Walk, Seattle, WA",
-      "osm_q": "Overlook Walk"
+      "osm_q": "Overlook Walk",
+      "osm": "W1256939020",
+      "ad": "Alaskan Way, Seattle, WA 98181"
      },
      {
       "id": "seattle-outdoor-olympic-sculpture-park",
@@ -812,7 +835,10 @@
        "fam"
       ],
       "q": "Hiram M. Chittenden Locks, Seattle, WA",
-      "osm_q": "Hiram M. Chittenden Locks"
+      "osm_q": "Hiram M. Chittenden Locks",
+      "osm": "W292961531",
+      "ad": "3015 Northwest 54th Street, Seattle, WA 98107",
+      "hours": "Mo-Su 07:00-21:00"
      },
      {
       "id": "seattle-outdoor-discovery-park",
@@ -1018,7 +1044,11 @@
        "quick",
        "fam"
       ],
-      "osm_q": "Dough Zone"
+      "osm_q": "Dough Zone",
+      "osm": "N4728664413",
+      "ad": "10300 Main Street, Bellevue, WA 98004",
+      "web": "https://doughzonedumplinghouse.com",
+      "hours": "Mo-Su 11:00-22:00"
      },
      {
       "id": "bellevue-eat-facing-east",
@@ -1071,7 +1101,9 @@
       "pr": "$50–80",
       "t": [
        "date"
-      ]
+      ],
+      "osm": "N1006125170",
+      "ad": "Northeast 2nd Street, Bellevue, WA 98004"
      },
      {
       "id": "bellevue-eat-carmine-s",
@@ -1127,7 +1159,10 @@
       "l": 2,
       "pr": "$130–210",
       "t": [],
-      "osm_q": "Hotel 116"
+      "osm_q": "Hotel 116",
+      "osm": "W55480139",
+      "ad": "625 116th Avenue Northeast, Bellevue, WA 98004",
+      "web": "https://www.coasthotels.com/hotel-116-a-coast-hotel-bellevue"
      },
      {
       "id": "bellevue-stay-hilton-bellevue",
@@ -1148,7 +1183,10 @@
       "l": 2,
       "pr": "$180–300",
       "t": [],
-      "osm_q": "AC Hotel"
+      "osm_q": "AC Hotel",
+      "osm": "W778809402",
+      "ad": "208 106th Place Northeast, Bellevue, WA 98004",
+      "web": "https://www.marriott.com/hotels/travel/seaar-ac-hotel-seattle-bellevue-downtown/"
      },
      {
       "id": "bellevue-stay-hyatt-regency-bellevue",
@@ -1172,7 +1210,9 @@
       "l": 3,
       "pr": "$250–450",
       "t": [],
-      "osm_q": "Westin Bellevue"
+      "osm_q": "Westin Bellevue",
+      "osm": "W328017119",
+      "ad": "600 Bellevue Way Northeast, Bellevue, WA 98004"
      },
      {
       "id": "bellevue-stay-bellevue-club-hotel",
@@ -1184,7 +1224,9 @@
       "t": [
        "date"
       ],
-      "osm_q": "Bellevue Club"
+      "osm_q": "Bellevue Club",
+      "osm": "W393310453",
+      "ad": "Southeast 6th Street, Bellevue, WA 98009"
      },
      {
       "id": "bellevue-stay-w-bellevue",
@@ -1210,7 +1252,10 @@
       "t": [
        "date"
       ],
-      "osm_q": "InterContinental"
+      "osm_q": "InterContinental",
+      "osm": "N11921218971",
+      "ad": "850 Avenue Square Northeast, Bellevue, WA 98004",
+      "web": "https://www.ihg.com/intercontinental/hotels/us/en/bellevue/seaha/hoteldetail"
      }
     ],
     "indoor": [
@@ -1226,7 +1271,11 @@
       ],
       "q": "Bellevue Square, Bellevue, WA",
       "top": 1,
-      "osm_q": "Bellevue Square"
+      "osm_q": "Bellevue Square",
+      "osm": "W29234887",
+      "ad": "575 Bellevue Way Northeast, Bellevue, WA 98004",
+      "web": "https://www.bellevuecollection.com/",
+      "hours": "Mo-Sa 09:30-21:30; Su 11:00-21:00"
      },
      {
       "id": "bellevue-indoor-kidsquest-children-s-museum",
@@ -1268,7 +1317,10 @@
       "t": [
        "fam"
       ],
-      "osm_q": "Lucky Strike"
+      "osm_q": "Lucky Strike",
+      "osm": "N4188521492",
+      "ad": "Northeast 8th Street, Bellevue, WA 98004",
+      "hours": "Mo-Th 16:00-22:00; Fr 16:00-24:00; Sa 00:00-02:00,12:00-24:00; Su 00:00-02:00,12:00-22:00"
      },
      {
       "id": "bellevue-indoor-crossroads-bellevue",
@@ -1423,7 +1475,9 @@
       "t": [
        "icon"
       ],
-      "osm_q": "Shakabrah"
+      "osm_q": "Shakabrah",
+      "osm": "N5706962908",
+      "ad": "2618 6th Avenue, Tacoma, WA 98405"
      },
      {
       "id": "tacoma-breakfast-old-milwaukee-cafe",
@@ -1472,7 +1526,8 @@
        "quick"
       ],
       "q": "Anthem Coffee, 1911 Pacific Ave, Tacoma, WA",
-      "osm_q": "Anthem Coffee"
+      "osm_q": "Anthem Coffee",
+      "osm_src": "manual"
      },
      {
       "id": "tacoma-breakfast-bluebeard-coffee-roasters",
@@ -1575,7 +1630,8 @@
        "fam"
       ],
       "q": "Duke's Seafood, 3327 Ruston Way, Tacoma, WA",
-      "osm_q": "Duke's Seafood"
+      "osm_q": "Duke's Seafood",
+      "osm_src": "manual"
      },
      {
       "id": "tacoma-eat-over-the-moon-cafe",
@@ -1588,7 +1644,8 @@
        "date",
        "res"
       ],
-      "osm_q": "Over the Moon"
+      "osm_q": "Over the Moon",
+      "osm_src": "manual"
      },
      {
       "id": "tacoma-eat-asado",
@@ -1689,7 +1746,8 @@
        "view"
       ],
       "q": "Silver Cloud Hotel Tacoma at Point Ruston Waterfront, Tacoma, WA",
-      "osm_q": "Silver Cloud Hotel"
+      "osm_q": "Silver Cloud Hotel",
+      "osm_src": "manual"
      }
     ],
     "indoor": [
@@ -1796,7 +1854,8 @@
        "quick"
       ],
       "q": "Union Station, 1717 Pacific Ave, Tacoma, WA",
-      "osm_q": "Union Station"
+      "osm_q": "Union Station",
+      "osm_src": "manual"
      },
      {
       "id": "tacoma-indoor-emerald-queen-casino",
@@ -1859,7 +1918,8 @@
       ],
       "q": "Paradise, Mount Rainier National Park, WA",
       "top": 1,
-      "osm_q": "Henry M. Jackson Memorial Visitor Center"
+      "osm_q": "Henry M. Jackson Memorial Visitor Center",
+      "osm_src": "manual"
      },
      {
       "id": "tacoma-outdoor-point-defiance-zoo-and-aquarium",
@@ -1899,7 +1959,9 @@
        "fam"
       ],
       "q": "Dune Peninsula at Point Defiance Park, Tacoma, WA",
-      "osm_q": "Dune Peninsula"
+      "osm_q": "Dune Peninsula",
+      "osm": "N12960622254",
+      "web": "https://www.parkstacoma.gov/place/dune-peninsula/"
      },
      {
       "id": "tacoma-outdoor-wright-park",
@@ -2007,7 +2069,9 @@
        "quick"
       ],
       "osm_q": "Olympia Coffee Roasting",
-      "q": "Olympia Coffee Roasting, 600 4th Ave E, Olympia, WA"
+      "q": "Olympia Coffee Roasting, 600 4th Ave E, Olympia, WA",
+      "osm": "N11350466432",
+      "ad": "600 4th Avenue East, Olympia, WA 98501"
      },
      {
       "id": "olympia-breakfast-left-bank-pastry",
@@ -2103,7 +2167,9 @@
       "t": [
        "fam"
       ],
-      "osm_q": "Well 80"
+      "osm_q": "Well 80",
+      "osm": "N2387842602",
+      "ad": "514 4th Avenue East, Olympia, WA 98501"
      },
      {
       "id": "olympia-eat-lemon-grass-restaurant",
@@ -2113,7 +2179,8 @@
       "l": 2,
       "pr": "$18–28",
       "t": [],
-      "osm_q": "Lemon Grass"
+      "osm_q": "Lemon Grass",
+      "osm_src": "manual"
      },
      {
       "id": "olympia-eat-old-school-pizzeria",
@@ -2180,7 +2247,8 @@
       "l": 2,
       "pr": "$160–240",
       "t": [],
-      "osm_q": "Hilton Garden Inn"
+      "osm_q": "Hilton Garden Inn",
+      "osm_src": "manual"
      },
      {
       "id": "olympia-stay-doubletree-by-hilton-olympia",
@@ -2206,7 +2274,9 @@
       "t": [
        "date"
       ],
-      "osm_q": "Swantown Inn"
+      "osm_q": "Swantown Inn",
+      "osm": "N2398935334",
+      "ad": "11th Avenue Southeast, Olympia, WA 98504"
      },
      {
       "id": "olympia-stay-alderbrook-resort-and-spa",
@@ -2301,7 +2371,9 @@
        "a21"
       ],
       "q": "Nisqually Red Wind Casino, Olympia, WA",
-      "osm_q": "Red Wind Casino"
+      "osm_q": "Red Wind Casino",
+      "osm": "W230750316",
+      "ad": "12819 Yelm Highway Southeast, Olympia, WA 98513"
      }
     ],
     "outdoor": [
@@ -2358,7 +2430,10 @@
       "pr": "Free",
       "t": [],
       "q": "Heritage Park, Olympia, WA",
-      "osm_q": "Heritage Park"
+      "osm_q": "Heritage Park",
+      "osm": "W264470388",
+      "web": "https://capitol.wa.gov/discover/parks-gardens/heritage-park-capitol-lake-trails",
+      "hours": "sunrise-sunset"
      },
      {
       "id": "olympia-outdoor-squaxin-park",
@@ -2436,7 +2511,11 @@
       "t": [
        "quick"
       ],
-      "osm_q": "Argonaut"
+      "osm_q": "Argonaut",
+      "osm": "W1531265308",
+      "ad": "US 2, Leavenworth, WA 98826",
+      "web": "https://www.argocoffeeandbiscuits.com/",
+      "hours": "Mo-Su 07:00-14:00"
      },
      {
       "id": "leavenworth-breakfast-pavz-cafe-bistro",
@@ -2541,7 +2620,9 @@
       "t": [
        "view"
       ],
-      "osm_q": "Yodelin"
+      "osm_q": "Yodelin",
+      "osm": "N4162466088",
+      "ad": "633 Front Street, Leavenworth, WA 98826"
      },
      {
       "id": "leavenworth-eat-icicle-brewing-company",
@@ -2626,7 +2707,8 @@
       "l": 2,
       "pr": "$130–220",
       "t": [],
-      "osm_q": "LOGE"
+      "osm_q": "LOGE",
+      "osm_src": "manual"
      },
      {
       "id": "leavenworth-stay-enzian-inn",
@@ -2691,7 +2773,10 @@
       "t": [
        "date"
       ],
-      "osm_q": "Posthotel"
+      "osm_q": "Posthotel",
+      "osm": "W415189720",
+      "ad": "309 8th Street, Leavenworth, WA 98826",
+      "web": "https://posthotelleavenworth.com/"
      }
     ],
     "indoor": [
@@ -2710,7 +2795,10 @@
       "ok": 1,
       "osm_q": "Nutcracker Museum",
       "hours": "Mo-Sa 11:00-17:00; Su 11:00-16:30",
-      "hours_src": "manual"
+      "hours_src": "manual",
+      "osm": "N3243881544",
+      "ad": "735 Front Street, Leavenworth, WA 98826",
+      "web": "http://www.nutcrackermuseum.com/"
      },
      {
       "id": "leavenworth-indoor-kris-kringl",
@@ -2777,7 +2865,8 @@
       ],
       "q": "Front Street Park, Leavenworth, WA",
       "top": 1,
-      "osm_q": "Front Street Park"
+      "osm_q": "Front Street Park",
+      "osm": "W73960328"
      },
      {
       "id": "leavenworth-outdoor-waterfront-park-and-blackbird-island",
@@ -2792,7 +2881,8 @@
       ],
       "q": "Waterfront Park, Leavenworth, WA",
       "top": 1,
-      "osm_q": "Waterfront Park"
+      "osm_q": "Waterfront Park",
+      "osm": "R10695933"
      },
      {
       "id": "leavenworth-outdoor-leavenworth-adventure-park",
@@ -2885,7 +2975,9 @@
       "t": [
        "season",
        "fam"
-      ]
+      ],
+      "osm": "N356545606",
+      "ad": "Leavenworth Ski Lodge Road, WA"
      }
     ]
    }
@@ -2905,7 +2997,11 @@
       "d": "Crepes, Benedicts and Belgian waffles.",
       "l": 2,
       "pr": "$14–22",
-      "t": []
+      "t": [],
+      "osm": "N11571568053",
+      "ad": "1217 Harris Avenue, Bellingham, WA 98225",
+      "web": "https://www.mountbakery.com/fairhaven-mount-bakery",
+      "hours": "Mo-Su 08:00-14:00"
      },
      {
       "id": "bellingham-breakfast-homeskillet",
@@ -2927,7 +3023,11 @@
       "pr": "$14–22",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "N11251632541",
+      "ad": "Division Road, Bellingham, WA 98226",
+      "web": "https://www.birchdoorcafe.com/",
+      "hours": "Mo-Su 07:00-15:00"
      },
      {
       "id": "bellingham-breakfast-old-town-cafe",
@@ -2936,7 +3036,11 @@
       "d": "Local, organic breakfasts in the oldest part of downtown.",
       "l": 2,
       "pr": "$12–18",
-      "t": []
+      "t": [],
+      "osm": "N6028202918",
+      "ad": "314 West Holly Street, Bellingham, WA 98225",
+      "web": "https://www.theoldtowncafe.com/",
+      "hours": "Mo-Sa 06:30-14:30; Su 08:00-14:00"
      },
      {
       "id": "bellingham-breakfast-skylark-s-hidden-cafe",
@@ -2945,7 +3049,11 @@
       "d": "Breakfast all day on a tucked-away patio.",
       "l": 2,
       "pr": "$14–22",
-      "t": []
+      "t": [],
+      "osm": "N2122216022",
+      "ad": "1308 11th Street, Bellingham, WA 98225",
+      "web": "https://www.skylarkshiddencafe.com/",
+      "hours": "Mo-Su 09:00-21:00"
      },
      {
       "id": "bellingham-breakfast-avenue-bread",
@@ -2957,7 +3065,10 @@
       "t": [
        "quick"
       ],
-      "q": "Avenue Bread, 1313 Railroad Ave, Bellingham, WA"
+      "q": "Avenue Bread, 1313 Railroad Ave, Bellingham, WA",
+      "osm": "N5862322328",
+      "ad": "1313 Railroad Avenue, Bellingham, WA 98225",
+      "hours": "Mo-Su 07:30-16:00"
      },
      {
       "id": "bellingham-breakfast-woods-coffee-at-boulevard-park",
@@ -2971,7 +3082,8 @@
        "quick"
       ],
       "q": "Woods Coffee, Boulevard Park, Bellingham, WA",
-      "osm_q": "Woods Coffee"
+      "osm_q": "Woods Coffee",
+      "osm_src": "manual"
      }
     ],
     "eat": [
@@ -2996,7 +3108,11 @@
       "d": "Organic brewery with burgers and bowls.",
       "l": 2,
       "pr": "$15–25",
-      "t": []
+      "t": [],
+      "osm": "W757301521",
+      "ad": "1330 North Forest Street, Bellingham, WA 98225",
+      "web": "https://aslanbrewing.com/",
+      "hours": "Mo-Su 12:00-22:00"
      },
      {
       "id": "bellingham-eat-storia-cucina",
@@ -3005,7 +3121,10 @@
       "d": "Fresh pasta and pizza.",
       "l": 2,
       "pr": "$22–38",
-      "t": []
+      "t": [],
+      "osm": "N9625537727",
+      "ad": "109 Grand Avenue, Bellingham, WA 98225",
+      "web": "https://www.storiacucina.com/"
      },
      {
       "id": "bellingham-eat-d-anna-s-cafe-italiano",
@@ -3016,7 +3135,11 @@
       "pr": "$20–35",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "N5862018917",
+      "ad": "1317 North State Street, Bellingham, WA 98225",
+      "web": "https://www.dannascafeitaliano.com/",
+      "hours": "Th-Mo 16:00-21:00"
      },
      {
       "id": "bellingham-eat-fiamma-burger",
@@ -3028,7 +3151,11 @@
       "t": [
        "quick",
        "fam"
-      ]
+      ],
+      "osm": "N5825460843",
+      "ad": "1309 Railroad Avenue, Bellingham, WA 98225",
+      "web": "https://www.fiammaburger.com/",
+      "hours": "Mo-Su 11:00-21:00"
      },
      {
       "id": "bellingham-eat-boomer-s-drive-in",
@@ -3041,7 +3168,11 @@
        "quick",
        "icon",
        "fam"
-      ]
+      ],
+      "osm": "N540413947",
+      "ad": "310 North Samish Way, Bellingham, WA 98225",
+      "web": "https://www.boomersdrivein.com/",
+      "hours": "Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00"
      },
      {
       "id": "bellingham-eat-rock-and-rye-oyster-house",
@@ -3052,7 +3183,9 @@
       "pr": "$30–50",
       "t": [
        "date"
-      ]
+      ],
+      "osm": "N13696474120",
+      "ad": "1155 North State Street, Bellingham, WA 98225"
      },
      {
       "id": "bellingham-eat-keenan-s-at-the-pier",
@@ -3064,7 +3197,11 @@
       "t": [
        "view",
        "date"
-      ]
+      ],
+      "osm": "N5614478396",
+      "ad": "804 10th Street, Bellingham, WA 98225",
+      "web": "https://www.keenansatthepier.com/",
+      "hours": "Mo-Su 07:00-22:00"
      },
      {
       "id": "bellingham-eat-taylor-shellfish-farms",
@@ -3078,7 +3215,8 @@
        "trip"
       ],
       "q": "Taylor Shellfish Farms, 2182 Chuckanut Dr, Bow, WA",
-      "osm_q": "Taylor Shellfish Farms"
+      "osm_q": "Taylor Shellfish Farms",
+      "osm_src": "manual"
      },
      {
       "id": "bellingham-eat-the-oyster-bar",
@@ -3092,7 +3230,11 @@
        "date",
        "res"
       ],
-      "q": "The Oyster Bar, 2578 Chuckanut Dr, Bow, WA"
+      "q": "The Oyster Bar, 2578 Chuckanut Dr, Bow, WA",
+      "osm": "W357229825",
+      "ad": "2578 Chuckanut Drive, Samish, WA 98232",
+      "web": "https://www.theoysterbar.net/",
+      "hours": "Mo-Su 11:30-21:00"
      }
     ],
     "stay": [
@@ -3103,7 +3245,10 @@
       "d": "Renovated mid-century motel.",
       "l": 2,
       "pr": "$130–210",
-      "t": []
+      "t": [],
+      "osm": "N13228785962",
+      "ad": "2419 Elm Street, Bellingham, WA 98225",
+      "web": "https://www.heliotropehotel.com/"
      },
      {
       "id": "bellingham-stay-four-points-by-sheraton-bellingham",
@@ -3114,7 +3259,10 @@
       "pr": "$140–220",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W43138167",
+      "ad": "714 Lakeway Drive, Bellingham, WA 98225",
+      "web": "https://www.marriott.com/hotels/travel/blifp-four-points-bellingham-hotel-and-conference-center/"
      },
      {
       "id": "bellingham-stay-hotel-leo",
@@ -3123,7 +3271,10 @@
       "d": "Restored historic hotel in the middle of downtown.",
       "l": 2,
       "pr": "$150–240",
-      "t": []
+      "t": [],
+      "osm": "N10685246164",
+      "ad": "1224 Cornwall Avenue, Bellingham, WA 98225",
+      "web": "https://www.thehotelleo.com/"
      },
      {
       "id": "bellingham-stay-fairhaven-village-inn",
@@ -3132,7 +3283,10 @@
       "d": "Small inn in the historic district, near the Alaska ferry and Amtrak.",
       "l": 2,
       "pr": "$180–280",
-      "t": []
+      "t": [],
+      "osm": "W312019840",
+      "ad": "1200 10th Street, Bellingham, WA 98225",
+      "web": "https://www.fairhavenvillageinn.com/"
      },
      {
       "id": "bellingham-stay-hotel-bellwether",
@@ -3143,7 +3297,10 @@
       "pr": "$220–380",
       "t": [
        "view"
-      ]
+      ],
+      "osm": "W311701654",
+      "ad": "1 Bellwether Way, Bellingham, WA 98225",
+      "web": "https://hotelbellwether.com/"
      },
      {
       "id": "bellingham-stay-the-chrysalis-inn-and-spa",
@@ -3156,7 +3313,10 @@
        "view",
        "date"
       ],
-      "osm_q": "Chrysalis Inn"
+      "osm_q": "Chrysalis Inn",
+      "osm": "N2122186777",
+      "ad": "804 10th Street, Bellingham, WA 98225",
+      "web": "https://www.thechrysalisinn.com/"
      },
      {
       "id": "bellingham-stay-semiahmoo-resort",
@@ -3170,7 +3330,11 @@
        "view",
        "fam"
       ],
-      "q": "Semiahmoo Resort, Blaine, WA"
+      "q": "Semiahmoo Resort, Blaine, WA",
+      "osm": "W243390931",
+      "ad": "9565 Semiahmoo Parkway, Blaine, WA 98230",
+      "web": "https://www.semiahmoo.com/",
+      "hours": "24/7"
      }
     ],
     "indoor": [
@@ -3184,7 +3348,11 @@
       "t": [
        "fam",
        "icon"
-      ]
+      ],
+      "osm": "N1924410691",
+      "ad": "1312 Bay Street, Bellingham, WA 98225",
+      "web": "https://www.sparkmuseum.org/",
+      "hours": "We-Su 11:00-17:00"
      },
      {
       "id": "bellingham-indoor-whatcom-museum",
@@ -3196,7 +3364,11 @@
       "t": [
        "fam"
       ],
-      "osm_q": "Whatcom Museum Lightcatcher"
+      "osm_q": "Whatcom Museum Lightcatcher",
+      "osm": "N13201342720",
+      "ad": "250 Flora Street, Bellingham, WA 98225",
+      "web": "https://www.whatcommuseum.org/visit/buildings/lightcatcher/",
+      "hours": "We-Su 12:00-17:00"
      },
      {
       "id": "bellingham-indoor-village-books-and-paper-dreams",
@@ -3207,7 +3379,11 @@
       "pr": "Free to browse",
       "t": [],
       "osm_q": "Village Books",
-      "q": "Village Books, 1200 11th St, Bellingham, WA"
+      "q": "Village Books, 1200 11th St, Bellingham, WA",
+      "osm": "N255801451",
+      "ad": "1200 11th Street, Bellingham, WA 98225",
+      "web": "https://www.villagebooks.com/",
+      "hours": "Mo-Th 10:00-21:00; Fr-Sa 10:00-22:00; Su 10:00-19:00"
      },
      {
       "id": "bellingham-indoor-bellingham-farmers-market",
@@ -3220,7 +3396,10 @@
        "fam",
        "season"
       ],
-      "q": "Depot Market Square, Bellingham, WA"
+      "q": "Depot Market Square, Bellingham, WA",
+      "osm": "W1154400349",
+      "ad": "1100 Railroad Avenue, Bellingham, WA 98225",
+      "web": "https://www.bellinghamfarmers.org/"
      },
      {
       "id": "bellingham-indoor-marine-life-center",
@@ -3232,7 +3411,11 @@
       "t": [
        "fam",
        "quick"
-      ]
+      ],
+      "osm": "N4143715155",
+      "ad": "Roeder Avenue, Bellingham, WA 98225",
+      "web": "https://portofbellingham.com/508/Marine-Life-Center---Bellingham",
+      "hours": "Mo-Su 11:00-17:00"
      }
     ],
     "outdoor": [
@@ -3247,7 +3430,10 @@
        "fam",
        "view"
       ],
-      "top": 1
+      "top": 1,
+      "osm": "W374986504",
+      "web": "https://cob.org/services/recreation/parks-trails/parks-guide/whatcom-falls-park",
+      "hours": "Mo-Su 06:00-22:00"
      },
      {
       "id": "bellingham-outdoor-boulevard-park-and-taylor-dock",
@@ -3262,7 +3448,9 @@
       ],
       "q": "Boulevard Park, Bellingham, WA",
       "top": 1,
-      "osm_q": "Boulevard Park"
+      "osm_q": "Boulevard Park",
+      "osm": "W43147238",
+      "hours": "Mo-Su 06:00-22:00"
      },
      {
       "id": "bellingham-outdoor-historic-fairhaven",
@@ -3276,7 +3464,10 @@
       ],
       "q": "Fairhaven Village Green, Bellingham, WA",
       "top": 1,
-      "osm_q": "Fairhaven Village Green"
+      "osm_q": "Fairhaven Village Green",
+      "osm": "W166077570",
+      "web": "https://cob.org/services/recreation/parks-trails/parks-guide/fairhaven-village-green",
+      "hours": "Mo-Su 06:00-22:00"
      },
      {
       "id": "bellingham-outdoor-chuckanut-drive",
@@ -3289,7 +3480,9 @@
        "view"
       ],
       "q": "Chuckanut Drive, Bellingham, WA",
-      "top": 1
+      "top": 1,
+      "osm": "W488120347",
+      "ad": "Chuckanut Drive, Bellingham, WA 98229"
      },
      {
       "id": "bellingham-outdoor-larrabee-state-park",
@@ -3300,7 +3493,10 @@
       "pr": "$10 Discover Pass day permit per car",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "R3723001",
+      "web": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+      "hours": "06:30-dusk"
      },
      {
       "id": "bellingham-outdoor-lake-padden-park",
@@ -3311,7 +3507,8 @@
       "pr": "Free",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W374967564"
      },
      {
       "id": "bellingham-outdoor-artist-point",
@@ -3325,7 +3522,9 @@
        "trip",
        "season"
       ],
-      "q": "Artist Point, Mt Baker Hwy, Deming, WA"
+      "q": "Artist Point, Mt Baker Hwy, Deming, WA",
+      "osm": "N1931654797",
+      "ad": "Artist Ridge Trail, WA"
      },
      {
       "id": "bellingham-outdoor-san-juan-cruises-whale-watching",
@@ -3364,7 +3563,9 @@
        "fam"
       ],
       "q": "Frank's Diner, 1516 W 2nd Ave, Spokane, WA",
-      "top": 1
+      "top": 1,
+      "osm": "W414058467",
+      "ad": "West 2nd Avenue, Spokane, WA 99201"
      },
      {
       "id": "spokane-breakfast-old-european",
@@ -3376,7 +3577,9 @@
       "t": [
        "fam"
       ],
-      "q": "Old European Restaurant, 7640 N Division St, Spokane, WA"
+      "q": "Old European Restaurant, 7640 N Division St, Spokane, WA",
+      "osm": "W120462545",
+      "ad": "North Division Street, Spokane, WA 99218"
      },
      {
       "id": "spokane-breakfast-chaps-diner-and-bakery",
@@ -3386,7 +3589,10 @@
       "l": 2,
       "pr": "$14–22",
       "t": [],
-      "osm_q": "Chaps"
+      "osm_q": "Chaps",
+      "osm": "W1050946058",
+      "ad": "4237 South Cheney-Spokane Road, Spokane, WA 99204",
+      "web": "https://www.chapsgirl.com/home"
      },
      {
       "id": "spokane-breakfast-bruncheonette",
@@ -3395,7 +3601,9 @@
       "d": "Chef-run brunch with biscuits and chilaquiles.",
       "l": 2,
       "pr": "$14–20",
-      "t": []
+      "t": [],
+      "osm": "W461176742",
+      "ad": "West Broadway Avenue, Spokane, WA 99201"
      },
      {
       "id": "spokane-breakfast-the-yards-bruncheon",
@@ -3416,7 +3624,9 @@
       "pr": "$11–17",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W48707680",
+      "ad": "1829 North Monroe Street, Spokane, WA 99205"
      },
      {
       "id": "spokane-breakfast-atticus-coffee-and-gifts",
@@ -3427,7 +3637,10 @@
       "pr": "$4–10",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "N9968747317",
+      "ad": "222 North Howard Street, Spokane, WA 99201",
+      "hours": "Mo-Sa 07:30-18:00; Su 09:00-17:00"
      }
     ],
     "eat": [
@@ -3443,7 +3656,9 @@
        "date",
        "icon"
       ],
-      "osm_q": "Clinkerdagger's"
+      "osm_q": "Clinkerdagger's",
+      "osm": "N7597470927",
+      "ad": "621 West Mallon Avenue, Spokane, WA 99201"
      },
      {
       "id": "spokane-eat-anthony-s-at-spokane-falls",
@@ -3455,7 +3670,10 @@
       "t": [
        "view"
       ],
-      "osm_q": "Anthony's"
+      "osm_q": "Anthony's",
+      "osm": "W667611902",
+      "ad": "510 North Lincoln Street, Spokane, WA 99201",
+      "web": "https://www.anthonys.com/restaurant/anthonys-at-spokane-falls/"
      },
      {
       "id": "spokane-eat-wild-sage-bistro",
@@ -3467,7 +3685,11 @@
       "t": [
        "date"
       ],
-      "osm_q": "Wild Sage"
+      "osm_q": "Wild Sage",
+      "osm": "N4152597844",
+      "ad": "916 West 2nd Avenue, Spokane, WA 99201",
+      "web": "https://www.wildsagebistro.com/",
+      "hours": "Su-Sa 16:00-21:00"
      },
      {
       "id": "spokane-eat-italia-trattoria",
@@ -3476,7 +3698,11 @@
       "d": "Neighborhood Italian with a strong brunch.",
       "l": 3,
       "pr": "$30–50",
-      "t": []
+      "t": [],
+      "osm": "W815568658",
+      "ad": "144 South Cannon Street, Spokane, WA 99201",
+      "web": "https://www.italiatrattoriaspokane.com/",
+      "hours": "We-Sa 17:00+; Su 09:00-14:00"
      },
      {
       "id": "spokane-eat-baba",
@@ -3486,7 +3712,8 @@
       "l": 3,
       "pr": "$25–40",
       "t": [],
-      "osm_q": "Baba"
+      "osm_q": "Baba",
+      "osm_src": "manual"
      },
      {
       "id": "spokane-eat-steam-plant-restaurant-and-brew-pub",
@@ -3499,7 +3726,9 @@
        "icon",
        "fam"
       ],
-      "osm_q": "Steam Plant"
+      "osm_q": "Steam Plant",
+      "osm": "W366611882",
+      "ad": "South Post Street, Spokane, WA 99201"
      },
      {
       "id": "spokane-eat-the-flying-goat",
@@ -3510,7 +3739,11 @@
       "pr": "$16–25",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W422377552",
+      "ad": "3318 West Northwest Boulevard, Spokane, WA 99205",
+      "web": "https://www.theflyinggoat.com/",
+      "hours": "Su-Th 11:00-21:00; Fr-Sa 11:00-22:00"
      },
      {
       "id": "spokane-eat-cochinito-taqueria",
@@ -3521,7 +3754,11 @@
       "pr": "$14–22",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "N7172963373",
+      "ad": "10 North Post Street, Spokane, WA 99201",
+      "web": "http://www.cochinitotaqueria.com/",
+      "hours": "Mo-Th 11:00-21:00; Fr, Sa 11:00-22:00"
      },
      {
       "id": "spokane-eat-domini-sandwiches",
@@ -3547,7 +3784,9 @@
        "quick",
        "icon"
       ],
-      "q": "Dick's Hamburgers, 10 E 3rd Ave, Spokane, WA"
+      "q": "Dick's Hamburgers, 10 E 3rd Ave, Spokane, WA",
+      "osm": "R6616585",
+      "ad": "10 East 3rd Avenue, Spokane, WA 99202"
      },
      {
       "id": "spokane-eat-churchill-s-steakhouse",
@@ -3558,7 +3797,10 @@
       "pr": "$70–120",
       "t": [
        "date"
-      ]
+      ],
+      "osm": "N4210108311",
+      "ad": "165 South Post Street, Spokane, WA 99201",
+      "web": "https://churchillssteakhouse.com/"
      }
     ],
     "stay": [
@@ -3571,7 +3813,10 @@
       "pr": "$110–180",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W373531727",
+      "ad": "700 North Division Street, Spokane, WA 99202",
+      "web": "https://rubyriverhotelspokane.com/"
      },
      {
       "id": "spokane-stay-montvale-hotel",
@@ -3580,7 +3825,10 @@
       "d": "Boutique hotel in an 1899 building.",
       "l": 2,
       "pr": "$130–200",
-      "t": []
+      "t": [],
+      "osm": "W444683185",
+      "ad": "1001 West 1st Avenue, Spokane, WA 99201",
+      "web": "https://montvalespokane.com/"
      },
      {
       "id": "spokane-stay-hotel-indigo-spokane-downtown",
@@ -3590,7 +3838,8 @@
       "l": 2,
       "pr": "$150–230",
       "t": [],
-      "osm_q": "Hotel Indigo"
+      "osm_q": "Hotel Indigo",
+      "osm_src": "manual"
      },
      {
       "id": "spokane-stay-oxford-suites-spokane-downtown",
@@ -3601,7 +3850,9 @@
       "pr": "$150–220",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W233713640",
+      "ad": "River Walk Loop Trail, Spokane, WA 99258"
      },
      {
       "id": "spokane-stay-the-davenport-grand",
@@ -3610,7 +3861,9 @@
       "d": "Modern tower facing Riverfront Park and the convention center.",
       "l": 2,
       "pr": "$180–300",
-      "t": []
+      "t": [],
+      "osm": "W376552740",
+      "ad": "333 West Spokane Falls Boulevard, Spokane, WA 99201"
      },
      {
       "id": "spokane-stay-northern-quest-resort-and-casino",
@@ -3622,7 +3875,9 @@
       "t": [
        "air"
       ],
-      "q": "Northern Quest Resort & Casino, Airway Heights, WA"
+      "q": "Northern Quest Resort & Casino, Airway Heights, WA",
+      "osm": "W1203276325",
+      "ad": "100 North Hayford Road, Airway Heights, WA 99001"
      },
      {
       "id": "spokane-stay-the-historic-davenport-hotel",
@@ -3635,7 +3890,9 @@
        "icon",
        "date"
       ],
-      "top": 1
+      "top": 1,
+      "osm": "W44152722",
+      "ad": "10 South Post Street, Spokane, WA 99201"
      }
     ],
     "indoor": [
@@ -3652,7 +3909,10 @@
       "ok": 1,
       "osm_q": "Northwest Museum of Arts and Culture",
       "hours": "Tu-Su 10:00-17:00",
-      "hours_src": "manual"
+      "hours_src": "manual",
+      "osm": "W1039908487",
+      "ad": "2316 West 1st Avenue, Spokane, WA 99201",
+      "web": "https://www.northwestmuseum.org/"
      },
      {
       "id": "spokane-indoor-looff-carrousel",
@@ -3665,7 +3925,9 @@
        "fam",
        "icon",
        "quick"
-      ]
+      ],
+      "osm": "W461176729",
+      "ad": "Spokane River Centennial Trail, Spokane, WA 99258"
      },
      {
       "id": "spokane-indoor-mobius-discovery-center",
@@ -3676,7 +3938,11 @@
       "pr": "About $12 per person",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W116272343",
+      "ad": "331 North Post Street, Spokane, WA 99201",
+      "web": "https://mobiusdiscoverycenter.org/",
+      "hours": "We-Sa 10:00-17:00; Su 11:00-17:00"
      },
      {
       "id": "spokane-indoor-river-park-square",
@@ -3685,7 +3951,9 @@
       "d": "Downtown mall with a cinema. Skywalks connect the nearby blocks in winter.",
       "l": 0,
       "pr": "Free to enter",
-      "t": []
+      "t": [],
+      "osm": "W41588011",
+      "ad": "North Wall Street, Spokane, WA 99201"
      },
      {
       "id": "spokane-indoor-bing-crosby-house-museum",
@@ -3697,7 +3965,9 @@
       "t": [
        "quick"
       ],
-      "q": "Bing Crosby House, 508 E Sharp Ave, Spokane, WA"
+      "q": "Bing Crosby House, 508 E Sharp Ave, Spokane, WA",
+      "osm": "N11423372529",
+      "ad": "508 East Sharp Avenue, Spokane, WA 99258"
      }
     ],
     "outdoor": [
@@ -3712,7 +3982,10 @@
        "fam",
        "icon"
       ],
-      "top": 1
+      "top": 1,
+      "osm": "R6007503",
+      "web": "https://my.spokanecity.org/riverfrontpark/",
+      "hours": "06:00-24:00"
      },
      {
       "id": "spokane-outdoor-spokane-falls-viewpoints",
@@ -3726,7 +3999,8 @@
       ],
       "q": "Huntington Park, Spokane, WA",
       "top": 1,
-      "osm_q": "Huntington Park"
+      "osm_q": "Huntington Park",
+      "osm": "W1053828618"
      },
      {
       "id": "spokane-outdoor-manito-park",
@@ -3738,7 +4012,8 @@
       "t": [
        "fam"
       ],
-      "top": 1
+      "top": 1,
+      "osm": "W41124516"
      },
      {
       "id": "spokane-outdoor-numerica-skyride",
@@ -3751,7 +4026,9 @@
        "view",
        "fam"
       ],
-      "osm_q": "SkyRide"
+      "osm_q": "SkyRide",
+      "osm": "W102749574",
+      "ad": "North Post Street, Spokane, WA 99201"
      },
      {
       "id": "spokane-outdoor-centennial-trail",
@@ -3763,7 +4040,9 @@
       "t": [
        "view"
       ],
-      "q": "Centennial Trail, Kendall Yards, Spokane, WA"
+      "q": "Centennial Trail, Kendall Yards, Spokane, WA",
+      "osm": "W369583715",
+      "ad": "Centennial Trail, WA 99208"
      },
      {
       "id": "spokane-outdoor-riverside-state-park",
@@ -3775,7 +4054,9 @@
       "t": [
        "view"
       ],
-      "q": "Bowl and Pitcher, Riverside State Park, Spokane, WA"
+      "q": "Bowl and Pitcher, Riverside State Park, Spokane, WA",
+      "osm": "R5908559",
+      "web": "https://parks.state.wa.us/573/Riverside"
      },
      {
       "id": "spokane-outdoor-green-bluff",
@@ -3802,7 +4083,11 @@
       "t": [
        "a21",
        "view"
-      ]
+      ],
+      "osm": "W293238178",
+      "ad": "4705 North Fruit Hill Road, WA 99217",
+      "web": "https://www.arborcrest.com/",
+      "hours": "Mo-Su 12:00-17:00"
      },
      {
       "id": "spokane-outdoor-mount-spokane-state-park",
@@ -3815,7 +4100,10 @@
        "trip",
        "view",
        "season"
-      ]
+      ],
+      "osm": "R5121725",
+      "web": "https://parks.wa.gov/find-parks/state-parks/mount-spokane-state-park",
+      "hours": "06:30-dusk"
      }
     ]
    }
@@ -3835,7 +4123,9 @@
       "d": "Scratch breakfasts and strong Benedicts.",
       "l": 2,
       "pr": "$13–20",
-      "t": []
+      "t": [],
+      "osm": "W370278607",
+      "ad": "1929 Main Street, Vancouver, WA 98660"
      },
      {
       "id": "vancouver-breakfast-hudson-s-bar-and-grill",
@@ -3845,7 +4135,9 @@
       "l": 2,
       "pr": "$16–26",
       "t": [],
-      "q": "Heathman Lodge, 7801 NE Greenwood Dr, Vancouver, WA"
+      "q": "Heathman Lodge, 7801 NE Greenwood Dr, Vancouver, WA",
+      "osm": "N4556177370",
+      "ad": "7801 Northeast Greenwood Drive, Vancouver, WA 98662"
      },
      {
       "id": "vancouver-breakfast-peachtree-restaurant-and-pie-house",
@@ -3857,7 +4149,8 @@
       "t": [
        "fam"
       ],
-      "osm_q": "Peachtree"
+      "osm_q": "Peachtree",
+      "osm_src": "manual"
      },
      {
       "id": "vancouver-breakfast-syrup-trap",
@@ -3868,7 +4161,10 @@
       "pr": "$12–18",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "N12097568070",
+      "ad": "1104 Main Street, Vancouver, WA 98660",
+      "web": "https://syruptrap.square.site/"
      },
      {
       "id": "vancouver-breakfast-relevant-coffee",
@@ -3879,7 +4175,11 @@
       "pr": "$4–8",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "N6122228659",
+      "ad": "1703 Main Street, Vancouver, WA 98660",
+      "web": "https://relevantcoffee.com",
+      "hours": "Mo-Su 07:00-17:00"
      },
      {
       "id": "vancouver-breakfast-kafiex-roasters",
@@ -3890,7 +4190,11 @@
       "pr": "$5–12",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "N9006857527",
+      "ad": "100 Waterfront Way, Vancouver, WA 98660",
+      "web": "https://www.kafiex.com/",
+      "hours": "Mo-Su 08:00-15:00"
      }
     ],
     "eat": [
@@ -3906,7 +4210,11 @@
        "fam"
       ],
       "q": "WildFin American Grill, 777 Waterfront Way, Vancouver, WA",
-      "top": 1
+      "top": 1,
+      "osm": "N5947176408",
+      "ad": "777 Waterfront Way, Vancouver, WA 98660",
+      "web": "https://www.wildfinamericangrill.com/",
+      "hours": "Su-Th 11:00-22:00, Fr-Sa 11:00-23:00"
      },
      {
       "id": "vancouver-eat-twigs-bistro-and-martini-bar",
@@ -3919,7 +4227,10 @@
        "view"
       ],
       "q": "Twigs Bistro, Vancouver Waterfront, Vancouver, WA",
-      "osm_q": "Twigs Bistro"
+      "osm_q": "Twigs Bistro",
+      "osm": "N5947176419",
+      "ad": "801 Waterfront Way, Vancouver, WA 98660",
+      "hours": "Su-Th 10:00-22:00; Fr-Sa 11:00-23:00"
      },
      {
       "id": "vancouver-eat-maryhill-winery-tasting-room-and-bistro",
@@ -3932,7 +4243,9 @@
        "view"
       ],
       "q": "Maryhill Winery, Vancouver Waterfront, Vancouver, WA",
-      "osm_q": "Maryhill Winery"
+      "osm_q": "Maryhill Winery",
+      "osm": "N9006819848",
+      "ad": "105 Waterfront Way, Vancouver, WA 98666"
      },
      {
       "id": "vancouver-eat-stack-571-burger-and-whiskey-bar",
@@ -3945,7 +4258,11 @@
        "fam"
       ],
       "q": "Stack 571, Vancouver Waterfront, Vancouver, WA",
-      "osm_q": "Stack 571"
+      "osm_q": "Stack 571",
+      "osm": "N9006843426",
+      "ad": "670 Waterfront Way, Vancouver, WA 98660",
+      "web": "https://www.theyardmilkshakebar.com/",
+      "hours": "Su-Th 12:00-21:00,  Fr-Sa 12:00-22:00"
      },
      {
       "id": "vancouver-eat-grays-at-the-park",
@@ -3955,7 +4272,8 @@
       "l": 3,
       "pr": "$28–45",
       "t": [],
-      "osm_q": "Grays"
+      "osm_q": "Grays",
+      "osm_src": "manual"
      },
      {
       "id": "vancouver-eat-amaro-s-table",
@@ -3964,7 +4282,11 @@
       "d": "Comfort food and cocktails. Busy at happy hour.",
       "l": 3,
       "pr": "$25–40",
-      "t": []
+      "t": [],
+      "osm": "N6298294416",
+      "ad": "1220 Main Street, Vancouver, WA 98660",
+      "web": "https://www.amarostable.com",
+      "hours": "Mo-Su 11:00-22:00"
      },
      {
       "id": "vancouver-eat-the-smokin-oak",
@@ -3973,7 +4295,9 @@
       "d": "Texas-style barbecue near the waterfront.",
       "l": 2,
       "pr": "$18–30",
-      "t": []
+      "t": [],
+      "osm": "N5610124699",
+      "ad": "501 Columbia Street, Vancouver, WA 98660"
      },
      {
       "id": "vancouver-eat-rally-pizza",
@@ -3996,7 +4320,10 @@
       "pr": "$12–20",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "N5409166560",
+      "ad": "114 West 6th Street, Vancouver, WA 98660",
+      "web": "https://www.littleconejo.com/"
      },
      {
       "id": "vancouver-eat-burgerville",
@@ -4023,7 +4350,10 @@
       "pr": "$120–180",
       "t": [],
       "q": "Comfort Inn & Suites, 401 E 13th St, Vancouver, WA",
-      "osm_q": "Comfort Inn"
+      "osm_q": "Comfort Inn",
+      "osm": "W368089829",
+      "ad": "401 East 13th Street, Vancouver, WA 98660",
+      "web": "https://www.choicehotels.com/washington/vancouver/quality-inn-hotels"
      },
      {
       "id": "vancouver-stay-heathman-lodge",
@@ -4034,7 +4364,10 @@
       "pr": "$150–240",
       "t": [
        "icon"
-      ]
+      ],
+      "osm": "W182043974",
+      "ad": "7801 Northeast Greenwood Drive, Vancouver, WA 98662",
+      "web": "https://www.heathmanlodge.com/"
      },
      {
       "id": "vancouver-stay-hilton-vancouver-washington",
@@ -4044,7 +4377,10 @@
       "l": 2,
       "pr": "$170–270",
       "t": [],
-      "osm_q": "Hilton Vancouver"
+      "osm_q": "Hilton Vancouver",
+      "osm": "W367740720",
+      "ad": "301 West 6th Street, Vancouver, WA 98660",
+      "web": "https://www.hilton.com/"
      },
      {
       "id": "vancouver-stay-ac-hotel-vancouver-waterfront",
@@ -4055,7 +4391,10 @@
       "pr": "$190–300",
       "t": [
        "view"
-      ]
+      ],
+      "osm": "W1000359667",
+      "ad": "301 West Columbia Way, Vancouver, WA 98660",
+      "web": "https://www.marriott.com/en-us/hotels/pdxac-ac-hotel-vancouver-waterfront/overview/"
      },
      {
       "id": "vancouver-stay-hotel-indigo-vancouver-waterfront",
@@ -4068,7 +4407,10 @@
        "view",
        "date"
       ],
-      "osm_q": "Hotel Indigo"
+      "osm_q": "Hotel Indigo",
+      "osm": "W753733409",
+      "ad": "550 Waterfront Way, Vancouver, WA 98660",
+      "web": "https://www.ihg.com/hotelindigo/hotels/us/en/vancouver/pdxvc/hoteldetail"
      },
      {
       "id": "vancouver-stay-ilani-casino-resort-hotel",
@@ -4081,7 +4423,11 @@
        "trip"
       ],
       "q": "ilani Casino Resort, Ridgefield, WA",
-      "osm_q": "ilani"
+      "osm_q": "ilani",
+      "osm": "W489712820",
+      "ad": "1 Cowlitz Way, Ridgefield, WA 98642",
+      "web": "https://ilaniresort.com/",
+      "hours": "24/7"
      }
     ],
     "indoor": [
@@ -4096,7 +4442,10 @@
        "fam"
       ],
       "top": 1,
-      "ok": 1
+      "ok": 1,
+      "osm": "W148510649",
+      "ad": "1115 East 5th Street, Vancouver, WA 98661",
+      "web": "https://www.nps.gov/fova/planyourvisit/pearsonairmuseum.htm"
      },
      {
       "id": "vancouver-indoor-clark-county-historical-museum",
@@ -4105,7 +4454,11 @@
       "d": "Local history in a 1909 Carnegie library.",
       "l": 1,
       "pr": "About $5–7 adult",
-      "t": []
+      "t": [],
+      "osm": "W368710213",
+      "ad": "1511 Main Street, Vancouver, WA 98660",
+      "web": "https://cchmuseum.org/",
+      "hours": "Tu-Sa 10:45-16:00"
      },
      {
       "id": "vancouver-indoor-kiggins-theatre",
@@ -4116,7 +4469,10 @@
       "pr": "About $10–12 ticket",
       "t": [
        "icon"
-      ]
+      ],
+      "osm": "W368089809",
+      "ad": "1011 Main Street, Vancouver, WA 98660",
+      "web": "http://www.kigginstheatre.net/"
      },
      {
       "id": "vancouver-indoor-waterfront-tasting-rooms",
@@ -4143,7 +4499,11 @@
        "trip"
       ],
       "q": "ilani Casino Resort, Ridgefield, WA",
-      "osm_q": "ilani"
+      "osm_q": "ilani",
+      "osm": "W489712820",
+      "ad": "1 Cowlitz Way, Ridgefield, WA 98642",
+      "web": "https://ilaniresort.com/",
+      "hours": "24/7"
      }
     ],
     "outdoor": [
@@ -4160,7 +4520,9 @@
        "icon"
       ],
       "q": "Grant Street Pier, Vancouver, WA",
-      "top": 1
+      "top": 1,
+      "osm": "N11234702027",
+      "ad": "Columbia Riverfront Renaissance Trail, Vancouver, WA 98666"
      },
      {
       "id": "vancouver-outdoor-fort-vancouver-national-historic-site",
@@ -4174,7 +4536,9 @@
        "icon"
       ],
       "top": 1,
-      "ok": 1
+      "ok": 1,
+      "osm": "R7594862",
+      "web": "https://www.nps.gov/fova/"
      },
      {
       "id": "vancouver-outdoor-beacon-rock-state-park",
@@ -4188,7 +4552,10 @@
        "trip"
       ],
       "q": "Beacon Rock State Park, Skamania, WA",
-      "top": 1
+      "top": 1,
+      "osm": "R5936264",
+      "web": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+      "hours": "08:00-dusk"
      },
      {
       "id": "vancouver-outdoor-officers-row",
@@ -4198,7 +4565,9 @@
       "l": 0,
       "pr": "Free",
       "t": [],
-      "q": "Officers Row, Vancouver, WA"
+      "q": "Officers Row, Vancouver, WA",
+      "osm": "W533209850",
+      "web": "https://www.cityofvancouver.us/ourcity/page/officers-row"
      },
      {
       "id": "vancouver-outdoor-esther-short-park",
@@ -4209,7 +4578,8 @@
       "pr": "Free",
       "t": [
        "fam"
-      ]
+      ],
+      "osm": "W33068462"
      },
      {
       "id": "vancouver-outdoor-vancouver-land-bridge",
@@ -4220,7 +4590,9 @@
       "pr": "Free",
       "t": [
        "quick"
-      ]
+      ],
+      "osm": "W421370496",
+      "ad": "Southeast Lewis and Clark Highway, Vancouver, WA 98666"
      },
      {
       "id": "vancouver-outdoor-columbia-river-renaissance-trail",
@@ -4246,7 +4618,8 @@
        "trip",
        "fam"
       ],
-      "q": "Ridgefield National Wildlife Refuge, Ridgefield, WA"
+      "q": "Ridgefield National Wildlife Refuge, Ridgefield, WA",
+      "osm": "R1941301"
      },
      {
       "id": "vancouver-outdoor-moulton-falls-regional-park",
@@ -4259,7 +4632,10 @@
        "trip",
        "view"
       ],
-      "q": "Moulton Falls Regional Park, Yacolt, WA"
+      "q": "Moulton Falls Regional Park, Yacolt, WA",
+      "osm": "W149633713",
+      "web": "https://clark.wa.gov/public-works/moulton-falls-regional-park",
+      "hours": "07:00-dusk"
      }
     ]
    }
