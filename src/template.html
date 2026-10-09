@@ -1,0 +1,380 @@
+<title>Washington City Tour Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Overpass:wght@600;700;800&display=swap">
+<style>
+/* Layout: a row of freeway-sign city buttons, sticky section tabs, a filter bar,
+   then a one-column card list that widens to a grid. Built to be read at a glance in a parked car. */
+:root{
+  --bg:#ECF0ED; --surface:#FFFFFF; --surface-2:#DEE6E1; --ink:#13201A; --ink-2:#4B5B52; --line:#C7D3CB;
+  --sign:#0A6A4E; --sign-ink:#FFFFFF; --accent:#0A6A4E;
+  --gold-bg:#FBE9B7; --gold-ink:#6B4700;
+  --free-bg:#D5EFE2; --free-ink:#0B5A41;
+  --open:#0B6B45; --closed:#B3261E; --soon:#8A5A00;
+  --font-display:"Overpass","Arial Narrow",Arial,sans-serif;
+  --font-body:"Atkinson Hyperlegible",Verdana,"Segoe UI",sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1310; --surface:#151F1A; --surface-2:#1F2C25; --ink:#E8EFEA; --ink-2:#A3B4AA; --line:#2D3C34;
+    --sign:#0F7D5C; --sign-ink:#FFFFFF; --accent:#63D3A8;
+    --gold-bg:#4A3706; --gold-ink:#F6D98A;
+    --free-bg:#123D2E; --free-ink:#8FE3BF;
+    --open:#7BE0B2; --closed:#FF9A8F; --soon:#F6D98A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1310; --surface:#151F1A; --surface-2:#1F2C25; --ink:#E8EFEA; --ink-2:#A3B4AA; --line:#2D3C34;
+  --sign:#0F7D5C; --sign-ink:#FFFFFF; --accent:#63D3A8;
+  --gold-bg:#4A3706; --gold-ink:#F6D98A;
+  --free-bg:#123D2E; --free-ink:#8FE3BF;
+  --open:#7BE0B2; --closed:#FF9A8F; --soon:#F6D98A;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.45}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:16px}
+
+.brand{display:flex;flex-direction:column;gap:4px}
+.eyebrow{margin:0;font:700 12.5px var(--font-display);letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+h1{margin:0;font:800 clamp(25px,6vw,34px)/1.1 var(--font-display);text-wrap:balance}
+.lede{margin:0;color:var(--ink-2);max-width:60ch}
+
+.cities{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(118px,1fr);gap:8px;overflow-x:auto;margin-inline:-16px;padding-inline:16px;padding-block:2px;scroll-padding-inline:16px;scrollbar-width:none}
+.cities::-webkit-scrollbar{display:none}
+.city{appearance:none;border:0;border-radius:8px;padding:11px 12px 9px;text-align:left;background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;display:flex;flex-direction:column;gap:1px;min-height:62px}
+.city b{font:800 17px/1.15 var(--font-display)}
+.city span{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.city[aria-pressed="true"]{background:var(--sign);color:var(--sign-ink);box-shadow:inset 0 0 0 3px var(--sign),inset 0 0 0 5px var(--sign-ink)}
+.city[aria-pressed="true"] span{color:var(--sign-ink);opacity:.88}
+
+.cityinfo{display:flex;flex-direction:column;gap:2px}
+.cityinfo h2{margin:0;font:800 22px/1.15 var(--font-display)}
+.cityinfo p{margin:0;color:var(--ink-2);max-width:65ch}
+.cityinfo .drive{color:var(--ink);font-variant-numeric:tabular-nums}
+
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-inline:-16px;padding-inline:16px;border-bottom:1px solid var(--line);display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;background:none;border:0;border-bottom:3px solid transparent;padding:13px 12px 9px;font:700 15.5px var(--font-display);color:var(--ink-2);white-space:nowrap;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+.tools{display:flex;flex-direction:column;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.more{border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.more summary{cursor:pointer;padding:11px 12px;font:700 15px var(--font-display);min-height:44px}
+.morebody{display:flex;flex-direction:column;gap:12px;padding:2px 12px 12px}
+.more .field select{max-width:320px}
+.field label{font:700 12.5px var(--font-display);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.field input,.field select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;padding:8px 12px}
+.chip{appearance:none;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 13px;font:inherit;font-size:14.5px;min-height:38px;cursor:pointer;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{background:var(--sign);border-color:var(--sign);color:var(--sign-ink);font-weight:700}
+
+.status{margin:0;color:var(--ink-2);font-size:14.5px}
+.status b{color:var(--ink)}
+.linkbtn{appearance:none;background:none;border:0;padding:0;font:inherit;color:var(--accent);text-decoration:underline;cursor:pointer}
+
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card-head{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
+.card h3{font:800 19px/1.2 var(--font-display);margin:0;text-wrap:balance;min-width:0;overflow-wrap:anywhere}
+.lvl{font:800 14px/1 var(--font-display);padding:6px 8px 4px;border-radius:6px;background:var(--surface-2);white-space:nowrap}
+.lvl.free{background:var(--free-bg);color:var(--free-ink)}
+.where{color:var(--ink-2);font-size:14px;margin:0}
+.desc{margin:0}
+.price{margin:0;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline}
+.price strong{font:800 17px var(--font-display);font-variant-numeric:tabular-nums}
+.price span{color:var(--ink-2);font-size:14px}
+.price .ok{color:var(--free-ink);font-weight:700}
+.hours{margin:0;display:flex;flex-wrap:wrap;gap:0 8px;align-items:baseline;font-size:14.5px;color:var(--ink-2)}
+.state{font:800 15px var(--font-display)}
+.state.open{color:var(--open)} .state.closed{color:var(--closed)} .state.soon{color:var(--soon)}
+.addr{margin:0;font-size:14.5px;color:var(--ink-2);overflow-wrap:anywhere}
+.week{font-size:14px}
+.week summary{cursor:pointer;color:var(--accent);font-weight:700;padding-block:4px}
+.week dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.week dt,.week dd{margin:0}
+.week .today{color:var(--ink);font-weight:700}
+.links{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14.5px}
+.links a{color:var(--accent);font-weight:700;padding-block:6px}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font-size:12.5px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2)}
+.tags li.top{background:var(--gold-bg);color:var(--gold-ink);border-color:transparent;font-weight:700}
+.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:auto;padding-top:4px}
+.nav.one{grid-template-columns:1fr}
+.go{display:flex;align-items:center;justify-content:center;min-height:46px;padding:6px 4px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font:700 14px/1.15 var(--font-display);text-decoration:none;text-align:center}
+.go:hover{border-color:var(--accent)}
+.go.primary{background:var(--sign);color:var(--sign-ink);border-color:var(--sign);font-size:16px}
+
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:22px 16px;text-align:center;color:var(--ink-2)}
+.empty p{margin:0 0 6px}
+
+.foot{border-top:1px solid var(--line);padding-top:14px;color:var(--ink-2);font-size:14px;display:flex;flex-direction:column;gap:10px;max-width:75ch}
+.foot p{margin:0}
+.foot summary{cursor:pointer;color:var(--ink);font-weight:700}
+.foot ul{margin:8px 0 0;padding-left:18px;font-variant-numeric:tabular-nums}
+</style>
+
+<div class="wrap">
+  <header class="brand">
+    <p class="eyebrow">Driver's pocket guide</p>
+    <h1>Washington City Tour Guide</h1>
+    <p class="lede">Where to eat, stay and visit in eight Washington cities, with prices and one-tap directions.</p>
+  </header>
+
+  <nav class="cities" id="cities" aria-label="Choose a city"></nav>
+
+  <section class="cityinfo" id="cityinfo" aria-live="polite"></section>
+
+  <div class="tabs" id="tabs" role="tablist" aria-label="Sections"></div>
+
+  <div class="tools">
+    <div class="field">
+      <label for="q">Search all cities</label>
+      <input id="q" type="search" placeholder="Try: dumplings, waterfall, airport" autocomplete="off">
+    </div>
+    <details class="more" id="more">
+      <summary>Filters and navigation app</summary>
+      <div class="morebody">
+        <div class="row" id="filters" aria-label="Filters"></div>
+        <div class="field">
+          <label for="navpref">Navigation app on each card</label>
+          <select id="navpref">
+            <option value="all">Show all three</option>
+            <option value="google">Google Maps only</option>
+            <option value="waze">Waze only</option>
+            <option value="apple">Apple Maps only</option>
+          </select>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <p class="status" id="status" aria-live="polite"></p>
+  <main class="list" id="list"></main>
+
+  <footer class="foot">
+    <p>Prices are typical ranges gathered in October 2026. Menus and ticket prices change, so confirm before sending a rider somewhere far. A price marked Confirmed came from the venue's own website. Drive times are from Sea-Tac Airport with no traffic.</p>
+    <p id="fresh"></p>
+    <details>
+      <summary>What the price signs mean</summary>
+      <ul>
+        <li>Food, per person: $ under $15, $$ $15–30, $$$ $30–60, $$$$ over $60</li>
+        <li>Hotels, per night: $ under $150, $$ $150–250, $$$ $250–400, $$$$ over $400</li>
+        <li>Attractions, per adult: Free, $ under $15, $$ $15–30, $$$ $30 and up</li>
+      </ul>
+    </details>
+  </footer>
+</div>
+
+<script>
+const TAGS={fam:"Family friendly",view:"Great view",icon:"Local classic",quick:"Quick stop",date:"Special occasion",res:"Book ahead",trip:"Day trip",air:"Near airport",a21:"21+",season:"Seasonal",late:"Open late"};
+const SECTIONS=[["top","Top 5"],["breakfast","Breakfast"],["eat","Restaurants"],["stay","Hotels"],["indoor","Indoor"],["outdoor","Outdoor"]];
+const SEC_LABEL=Object.fromEntries(SECTIONS);
+const UNIT={breakfast:"per person",eat:"per person",stay:"per night",indoor:"",outdoor:""};
+const NOTE={
+  top:"The five to name when a rider wants a fast answer.",
+  breakfast:"Prices are per person, before tax and tip.",
+  eat:"Prices are per person for a normal meal, before tax and tip.",
+  stay:"Typical nightly rates. Summer weekends and event nights cost more.",
+  indoor:"Good for rainy days. Prices are for one adult unless noted.",
+  outdoor:"Best in dry weather. Prices are for one adult unless noted."
+};
+
+const DATA=/*__PLACES__*/null;
+const CITIES=DATA.cities;
+const DATA_SECTIONS=["breakfast","eat","stay","indoor","outdoor"];
+const ALL=[],BY_ID={};
+for(const c of CITIES)for(const s of DATA_SECTIONS)for(const pl of c.sections[s]){const x={...pl,city:c,sec:s};ALL.push(x);BY_ID[x.id]=x}
+
+const NAV_APPS={
+  google:{label:"Google Maps",url:d=>"https://www.google.com/maps/dir/?api=1&travelmode=driving&destination="+d},
+  waze:{label:"Waze",url:d=>"https://waze.com/ul?navigate=yes&q="+d},
+  apple:{label:"Apple Maps",url:d=>"https://maps.apple.com/?dirflg=d&daddr="+d}
+};
+const LEVELS=[[0,"Free"],[1,"$"],[2,"$$"],[3,"$$$"],[4,"$$$$"]];
+const FILTER_TAGS=["fam","view","icon","quick","trip"];
+
+const store={
+  get(k){try{return localStorage.getItem("wctg."+k)}catch(e){return null}},
+  set(k,v){try{localStorage.setItem("wctg."+k,v)}catch(e){}}
+};
+const cityById=id=>CITIES.find(c=>c.id===id);
+const hashCity=()=>cityById((location.hash||"").replace("#",""));
+
+const state={
+  city:(hashCity()||cityById(store.get("city"))||CITIES[0]).id,
+  sec:SEC_LABEL[store.get("sec")]?store.get("sec"):"top",
+  q:"",
+  levels:new Set(),
+  tags:new Set(),
+  openNow:false,
+  nav:NAV_APPS[store.get("nav")]?store.get("nav"):"all"
+};
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+
+const DAY_NAMES=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const placeQuery=pl=>pl.ad&&/^\d/.test(pl.ad)?pl.n+", "+pl.ad:pl.q||(pl.n+", "+pl.city.name+", WA");
+
+// Opening hours are stored as minutes after midnight, Monday first. A close time past 1440 runs into the next day.
+function pacificNow(){
+  const parts={};
+  for(const x of new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",weekday:"short",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(new Date()))parts[x.type]=x.value;
+  return {day:DAY_NAMES.indexOf(parts.weekday),min:(+parts.hour%24)*60+ +parts.minute};
+}
+function clock(m){
+  m=((m%1440)+1440)%1440;
+  if(m===0)return "midnight";
+  if(m===720)return "noon";
+  const h=Math.floor(m/60),mm=m%60;
+  return (h%12||12)+(mm?":"+String(mm).padStart(2,"0"):"")+(h<12?" AM":" PM");
+}
+function openState(h){
+  const {day,min}=pacificNow();
+  if(h.every(d=>d.length===1&&d[0][0]===0&&d[0][1]>=1440))return {open:true,always:true};
+  for(const [,c] of h[(day+6)%7])if(c>1440&&min<c-1440)return {open:true,until:c-1440,left:c-1440-min};
+  for(const [o,c] of h[day])if(min>=o&&min<c)return {open:true,until:c,left:c-min};
+  for(let i=0;i<8;i++){
+    const d=(day+i)%7;
+    for(const [o] of h[d])if(i>0||o>min)return {open:false,next:o,when:i===0?"":i===1?" tomorrow":" "+DAY_NAMES[d]};
+  }
+  return {open:false};
+}
+function hoursLine(pl){
+  if(pl.h){
+    const s=openState(pl.h);
+    if(s.always)return '<span class="state open">Open 24 hours</span>';
+    if(s.open)return s.left<=60
+      ?'<span class="state soon">Closes soon</span><span>at '+clock(s.until)+"</span>"
+      :'<span class="state open">Open now</span><span>closes '+clock(s.until)+"</span>";
+    return '<span class="state closed">Closed now</span>'+(s.next!==undefined?"<span>opens "+clock(s.next)+s.when+"</span>":"");
+  }
+  if(pl.hx)return "<span>Hours: "+esc(pl.hx)+"</span>";
+  return "<span>Hours not listed"+(pl.web?", check the website":"")+"</span>";
+}
+function weekTable(pl){
+  if(!pl.h)return "";
+  const today=pacificNow().day;
+  return '<details class="week"><summary>Hours for the week</summary><dl>'+pl.h.map((d,i)=>{
+    const cls=i===today?' class="today"':"";
+    const text=!d.length?"Closed":d.map(([o,c])=>o===0&&c>=1440?"Open 24 hours":clock(o)+" to "+clock(c)).join(", ");
+    return "<dt"+cls+">"+DAY_NAMES[i]+"</dt><dd"+cls+">"+text+"</dd>";
+  }).join("")+"</dl>"+(pl.hn?"<p>"+esc(pl.hn)+"</p>":"")+"</details>";
+}
+function infoLinks(pl){
+  const g="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(placeQuery(pl));
+  return '<p class="links">'+(pl.web?'<a href="'+esc(pl.web)+'" target="_blank" rel="noopener">Website</a>':"")+
+    '<a href="'+g+'" target="_blank" rel="noopener">Ratings and reviews on Google</a></p>';
+}
+
+function navLinks(pl){
+  const dest=encodeURIComponent(placeQuery(pl));
+  const apps=state.nav==="all"?Object.keys(NAV_APPS):[state.nav];
+  const one=apps.length===1;
+  return '<div class="nav'+(one?" one":"")+'">'+apps.map(k=>{
+    const a=NAV_APPS[k];
+    return '<a class="go'+(one?" primary":"")+'" href="'+a.url(dest)+'" target="_blank" rel="noopener" aria-label="Directions to '+esc(pl.n)+" in "+a.label+'">'+(one?"Navigate with "+a.label:a.label)+"</a>";
+  }).join("")+"</div>";
+}
+
+function card(pl,showCity,showSec){
+  const where=[pl.a,showCity?pl.city.name:"",showSec?SEC_LABEL[pl.sec]:""].filter(Boolean).join(" · ");
+  const lvl=pl.l===0?'<span class="lvl free">Free</span>':'<span class="lvl" aria-label="Price level '+pl.l+' of 4">'+"$".repeat(pl.l)+"</span>";
+  const unit=UNIT[pl.sec]&&!/[a-z]/i.test(pl.pr.replace(/^About /,""))?"<span>"+UNIT[pl.sec]+"</span>":"";
+  const tags=(pl.top?['<li class="top">Top pick</li>']:[]).concat(pl.t.map(t=>"<li>"+TAGS[t]+"</li>")).join("");
+  return '<article class="card"><div class="card-head"><h3>'+esc(pl.n)+"</h3>"+lvl+"</div>"+
+    '<p class="where">'+esc(where)+"</p>"+
+    '<p class="desc">'+esc(pl.d)+"</p>"+
+    '<p class="price"><strong>'+esc(pl.pr)+"</strong>"+unit+(pl.ok?'<span class="ok">Confirmed Oct 2026</span>':"")+"</p>"+
+    (pl.sec==="stay"&&!pl.h&&!pl.hx?"":'<p class="hours" data-id="'+pl.id+'">'+hoursLine(pl)+"</p>")+
+    (pl.ad?'<p class="addr">'+esc(pl.ad)+"</p>":"")+
+    weekTable(pl)+
+    (tags?'<ul class="tags">'+tags+"</ul>":"")+infoLinks(pl)+navLinks(pl)+"</article>";
+}
+
+function matches(pl,words){
+  if(state.levels.size&&!state.levels.has(pl.l))return false;
+  for(const t of state.tags)if(!pl.t.includes(t))return false;
+  if(state.openNow&&!(pl.h&&openState(pl.h).open))return false;
+  if(words.length){
+    const hay=(pl.n+" "+pl.a+" "+pl.d+" "+pl.pr+" "+(pl.ad||"")+" "+pl.city.name+" "+SEC_LABEL[pl.sec]+" "+pl.t.map(t=>TAGS[t]).join(" ")).toLowerCase();
+    return words.every(w=>hay.includes(w));
+  }
+  return true;
+}
+
+function render(){
+  const city=cityById(state.city);
+  $("cities").innerHTML=CITIES.map(c=>'<button class="city" type="button" data-city="'+c.id+'" aria-pressed="'+(c.id===state.city)+'"><b>'+c.name+"</b><span>"+c.mi+" mi</span></button>").join("");
+  $("cityinfo").innerHTML="<h2>"+city.name+'</h2><p class="drive">'+city.mi+" miles from Sea-Tac Airport, about "+city.drive+" with no traffic</p><p>"+esc(city.blurb)+"</p>";
+  $("tabs").innerHTML=SECTIONS.map(([id,label])=>'<button class="tab" type="button" role="tab" data-sec="'+id+'" aria-selected="'+(id===state.sec)+'">'+label+"</button>").join("");
+
+  const words=state.q.toLowerCase().split(/\s+/).filter(Boolean);
+  const searching=words.length>0;
+  let pool;
+  if(searching)pool=ALL;
+  else if(state.sec==="top")pool=ALL.filter(x=>x.city.id===state.city&&x.top);
+  else pool=ALL.filter(x=>x.city.id===state.city&&x.sec===state.sec);
+  const found=pool.filter(x=>matches(x,words));
+  const filtered=state.levels.size||state.tags.size||state.openNow;
+  const n=found.length+(found.length===1?" place":" places");
+
+  let status;
+  if(searching)status="<b>"+n+"</b> matching “"+esc(state.q)+"” across all cities.";
+  else status="<b>"+n+"</b> in "+city.name+", "+SEC_LABEL[state.sec]+". "+NOTE[state.sec];
+  if(state.openNow)status+=" Showing only places with known hours that are open right now.";
+  if(filtered||searching)status+=' <button class="linkbtn" type="button" id="clear">Clear search and filters</button>';
+  $("status").innerHTML=status;
+
+  $("list").innerHTML=found.length
+    ?found.map(x=>card(x,searching,searching||state.sec==="top")).join("")
+    :'<div class="empty"><p>No places match.</p><p>Try another price level, remove a filter, or search a different word.</p></div>';
+
+  for(const b of document.querySelectorAll("#filters .chip")){
+    const on=b.dataset.open?state.openNow:b.dataset.level!==undefined?state.levels.has(+b.dataset.level):state.tags.has(b.dataset.tag);
+    b.setAttribute("aria-pressed",on);
+  }
+}
+
+$("filters").insertAdjacentHTML("beforeend",
+  '<button class="chip" type="button" id="f-open" data-open="1" aria-pressed="false">Open now</button>'+
+  LEVELS.map(([l,label])=>'<button class="chip" type="button" id="f-l'+l+'" data-level="'+l+'" aria-pressed="false">'+label+"</button>").join("")+
+  FILTER_TAGS.map(t=>'<button class="chip" type="button" id="f-'+t+'" data-tag="'+t+'" aria-pressed="false">'+TAGS[t]+"</button>").join(""));
+$("navpref").value=state.nav;
+$("more").open=matchMedia("(min-width: 760px)").matches;
+
+function setCity(id,fromHash){
+  state.city=id;store.set("city",id);
+  if(!fromHash){try{history.replaceState(null,"","#"+id)}catch(e){}}
+  render();
+  const btn=document.querySelector('.city[aria-pressed="true"]');
+  if(btn&&btn.scrollIntoView)btn.scrollIntoView({block:"nearest",inline:"center"});
+}
+
+document.addEventListener("click",e=>{
+  const c=e.target.closest("[data-city]");
+  if(c){state.q="";$("q").value="";setCity(c.dataset.city);return}
+  const t=e.target.closest("[data-sec]");
+  if(t){state.sec=t.dataset.sec;store.set("sec",state.sec);state.q="";$("q").value="";render();return}
+  const f=e.target.closest("#filters .chip");
+  if(f){
+    if(f.dataset.open)state.openNow=!state.openNow;
+    else if(f.dataset.level!==undefined){const l=+f.dataset.level;state.levels.has(l)?state.levels.delete(l):state.levels.add(l)}
+    else{const g=f.dataset.tag;state.tags.has(g)?state.tags.delete(g):state.tags.add(g)}
+    render();return;
+  }
+  if(e.target.id==="clear"){state.q="";$("q").value="";state.levels.clear();state.tags.clear();state.openNow=false;render()}
+});
+$("q").addEventListener("input",e=>{state.q=e.target.value.trim();render()});
+$("navpref").addEventListener("change",e=>{state.nav=e.target.value;store.set("nav",state.nav);render()});
+addEventListener("hashchange",()=>{const c=hashCity();if(c&&c.id!==state.city)setCity(c.id,true)});
+
+const fresh=new Date(DATA.updated+"T12:00:00");
+$("fresh").textContent="Addresses, websites and opening hours were last refreshed on "+fresh.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})+". Open and closed status uses Pacific time. Holiday hours can differ. Place data © OpenStreetMap contributors.";
+
+render();
+setInterval(()=>{for(const el of document.querySelectorAll(".hours[data-id]"))el.innerHTML=hoursLine(BY_ID[el.dataset.id])},60000);
+</script>

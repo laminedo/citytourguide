@@ -1,0 +1,13 @@
+{
+  "name": "Washington City Tour Guide",
+  "short_name": "WA Guide",
+  "description": "Where to eat, stay and visit in eight Washington cities, with prices, hours and one-tap directions.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ECF0ED",
+  "theme_color": "#0A6A4E",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
