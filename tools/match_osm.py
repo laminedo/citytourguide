@@ -2,6 +2,7 @@
 """Find each place in OpenStreetMap and record its OSM id.
 
     python3 tools/match_osm.py          search for places not looked up yet
+    python3 tools/match_osm.py --retry  search again for places that found no match
     python3 tools/match_osm.py --apply  write confident matches into data/places.json
 
 Run when places are added. tools/update.py then refreshes address, website
@@ -14,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PLACES = ROOT / "data" / "places.json"
 CANDIDATES = ROOT / "data" / "osm_candidates.json"
 UA = "WashingtonCityTourGuide/1.0 (+https://github.com/laminedo/citytourguide)"
+THRESHOLD = 0.99  # every word of the shorter name matched
 STOP = {"the", "a", "an", "of", "and", "at", "in", "by", "co", "company", "restaurant", "cafe", "hotel"}
 
 
@@ -36,19 +38,44 @@ def search(q):
     return []
 
 
-def score(place_name, house, cand):
-    if (cand.get("address") or {}).get("state") != "Washington":
+def score(names, house, town, cand):
+    addr = cand.get("address") or {}
+    if addr.get("state") != "Washington" or cand.get("category") in ("highway", "place", "boundary", "landuse"):
         return 0
-    want = set(tokens(place_name))
     have = set(tokens(cand.get("name") or ""))
-    if not want or not have:
+    best = 0
+    for name in names:
+        want = set(tokens(name))
+        common = len(want & have)
+        if common:
+            best = max(best, common / len(want), common / len(have))
+    if not best:
         return 0
-    s = len(want & have) / len(want)
-    if house and (cand.get("address") or {}).get("house_number") == house:
-        s += 0.5
+    cand_town = addr.get("city") or addr.get("town") or addr.get("village") or addr.get("hamlet") or ""
+    if town and cand_town.lower() == town.lower():
+        best += 0.2
+    if house and addr.get("house_number") == house:
+        best += 0.5
+    elif house and addr.get("house_number"):
+        best -= 0.5  # same name at a different street number: another branch
     if (cand.get("extratags") or {}).get("opening_hours"):
-        s += 0.05
-    return s
+        best += 0.05
+    return best
+
+
+GENERIC = r"\s+(diner|cafe|café|restaurant|hotel|company|co\.?|bistro|bar|grill|inn|winery|tour)$"
+
+
+def search_names(p):
+    """Names to try, most specific first. "osm_q" in places.json is a hand-written hint."""
+    name = re.sub(r"\s*\(.*?\)", "", p["n"]).strip()
+    names = [p["osm_q"]] if p.get("osm_q") else []
+    names.append(name)
+    short = re.sub(r"^the\s+", "", name, flags=re.I)
+    short = re.sub(GENERIC, "", short, flags=re.I).split(" & ")[0].split(" and ")[0].strip()
+    if short and short not in names:
+        names.append(short)
+    return names
 
 
 def apply(data):
@@ -59,7 +86,7 @@ def apply(data):
     n = 0
     for p in all_places(data):
         c = cands.get(p["id"])
-        if not c or c["score"] < 0.99 or p.get("osm_src") == "manual":
+        if not c or c["score"] < THRESHOLD or p.get("osm_src") == "manual":
             continue
         tags = c.get("extratags") or {}
         p["osm"] = c["osm"]
@@ -78,11 +105,12 @@ def main():
     if "--apply" in sys.argv:
         return apply(data)
     out = json.loads(CANDIDATES.read_text()) if CANDIDATES.exists() else {}
+    retry = "--retry" in sys.argv
     todo = [(c, p) for c in data["cities"] for sec in c["sections"].values() for p in sec]
     for i, (c, p) in enumerate(todo, 1):
-        if p["id"] in out:
+        done = out.get(p["id"])
+        if done and not (retry and (done["score"] < THRESHOLD or p.get("osm_q")) and not p.get("osm")):
             continue
-        name = re.sub(r"\s*\(.*?\)", "", p["n"]).strip()
         q = p.get("q")
         town = c["name"]
         house = None
@@ -92,17 +120,18 @@ def main():
                 town = parts[-2]
             m = re.search(r",\s*(\d+)\s", q)
             house = m.group(1) if m else None
-        queries = [f"{name}, {town}, Washington", f"{name}, Washington"]
+        names = search_names(p)
+        queries = [f"{n}, {town}, Washington" for n in names] + [f"{names[0]}, Washington"]
         best, best_s, tried = None, 0, []
         for query in queries:
             res = search(query)
             time.sleep(1.1)
             tried.append({"q": query, "names": [r.get("name") for r in res][:5]})
             for r in res:
-                s = score(name, house, r)
-                if s > best_s:
-                    best, best_s = r, s
-            if best_s >= 0.99:
+                sc = score(names, house, town, r)
+                if sc > best_s:
+                    best, best_s = r, sc
+            if best_s >= 1.2:
                 break
         rec = {"name": p["n"], "city": c["name"], "score": round(best_s, 2), "tried": tried}
         if best:

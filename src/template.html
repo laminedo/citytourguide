@@ -170,7 +170,7 @@ h1{margin:0;font:800 clamp(25px,6vw,34px)/1.1 var(--font-display);text-wrap:bala
 
 <script>
 const TAGS={fam:"Family friendly",view:"Great view",icon:"Local classic",quick:"Quick stop",date:"Special occasion",res:"Book ahead",trip:"Day trip",air:"Near airport",a21:"21+",season:"Seasonal",late:"Open late"};
-const SECTIONS=[["top","Top 5"],["breakfast","Breakfast"],["eat","Restaurants"],["stay","Hotels"],["indoor","Indoor"],["outdoor","Outdoor"]];
+const SECTIONS=[["top","Top 5"],["breakfast","Breakfast"],["eat","Restaurants"],["stay","Hotels"],["indoor","Indoor for tourists"],["outdoor","Outdoor for tourists"]];
 const SEC_LABEL=Object.fromEntries(SECTIONS);
 const UNIT={breakfast:"per person",eat:"per person",stay:"per night",indoor:"",outdoor:""};
 const NOTE={
@@ -178,8 +178,8 @@ const NOTE={
   breakfast:"Prices are per person, before tax and tip.",
   eat:"Prices are per person for a normal meal, before tax and tip.",
   stay:"Typical nightly rates. Summer weekends and event nights cost more.",
-  indoor:"Good for rainy days. Prices are for one adult unless noted.",
-  outdoor:"Best in dry weather. Prices are for one adult unless noted."
+  indoor:"Indoor places for tourists to visit. Good for rainy days. Prices are for one adult unless noted.",
+  outdoor:"Outdoor places for tourists to visit. Best in dry weather. Prices are for one adult unless noted."
 };
 
 const DATA=/*__PLACES__*/null;

@@ -264,7 +264,8 @@
       "pr": "$40–65",
       "t": [
        "view"
-      ]
+      ],
+      "osm_q": "Elliott's Oyster House"
      },
      {
       "id": "seattle-eat-matt-s-in-the-market",
@@ -423,7 +424,8 @@
       "d": "Compact modern rooms with self check-in.",
       "l": 2,
       "pr": "$150–260",
-      "t": []
+      "t": [],
+      "osm_q": "citizenM"
      },
      {
       "id": "seattle-stay-the-maxwell-hotel",
@@ -588,7 +590,8 @@
       "osm": "W161587729",
       "ad": "305 Harrison Street, Seattle, WA 98109",
       "web": "https://www.chihulygardenandglass.com/",
-      "hours": "Mo-Su 11:00-18:00; Fr,Sa 11:00-19:00"
+      "hours": "Mo-Th 10:30-17:30; Fr-Sa 10:00-19:30; Su 10:00-18:30",
+      "hours_src": "manual"
      },
      {
       "id": "seattle-indoor-museum-of-pop-culture-mopop",
@@ -618,7 +621,8 @@
       "osm": "R16051213",
       "ad": "1483 Alaskan Way, Seattle, WA 98101",
       "web": "https://www.seattleaquarium.org/",
-      "hours": "Mo-Su 09:00-18:00"
+      "hours": "Mo-Su 09:30-18:00",
+      "hours_src": "manual"
      },
      {
       "id": "seattle-indoor-the-museum-of-flight",
@@ -632,7 +636,10 @@
        "air"
       ],
       "q": "The Museum of Flight, 9404 E Marginal Way S, Seattle, WA",
-      "ok": 1
+      "ok": 1,
+      "osm_q": "Museum of Flight",
+      "hours": "Mo-Su 10:00-17:00",
+      "hours_src": "manual"
      },
      {
       "id": "seattle-indoor-seattle-art-museum",
@@ -657,7 +664,8 @@
       "pr": "About $25 adult",
       "t": [
        "icon"
-      ]
+      ],
+      "osm_q": "Underground Tour"
      },
      {
       "id": "seattle-indoor-sky-view-observatory",
@@ -762,7 +770,8 @@
        "fam"
       ],
       "q": "Seattle Ferry Terminal, Colman Dock, 801 Alaskan Way, Seattle, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Seattle Ferry Terminal"
      },
      {
       "id": "seattle-outdoor-waterfront-park-and-overlook-walk",
@@ -775,7 +784,8 @@
        "view",
        "fam"
       ],
-      "q": "Overlook Walk, Seattle, WA"
+      "q": "Overlook Walk, Seattle, WA",
+      "osm_q": "Overlook Walk"
      },
      {
       "id": "seattle-outdoor-olympic-sculpture-park",
@@ -801,7 +811,8 @@
       "t": [
        "fam"
       ],
-      "q": "Hiram M. Chittenden Locks, Seattle, WA"
+      "q": "Hiram M. Chittenden Locks, Seattle, WA",
+      "osm_q": "Hiram M. Chittenden Locks"
      },
      {
       "id": "seattle-outdoor-discovery-park",
@@ -1007,7 +1018,7 @@
        "quick",
        "fam"
       ],
-      "osm_src": "manual"
+      "osm_q": "Dough Zone"
      },
      {
       "id": "bellevue-eat-facing-east",
@@ -1115,7 +1126,8 @@
       "d": "Good-value rooms near I-405 with free parking.",
       "l": 2,
       "pr": "$130–210",
-      "t": []
+      "t": [],
+      "osm_q": "Hotel 116"
      },
      {
       "id": "bellevue-stay-hilton-bellevue",
@@ -1135,7 +1147,8 @@
       "d": "Modern and walkable.",
       "l": 2,
       "pr": "$180–300",
-      "t": []
+      "t": [],
+      "osm_q": "AC Hotel"
      },
      {
       "id": "bellevue-stay-hyatt-regency-bellevue",
@@ -1158,7 +1171,8 @@
       "d": "Inside Lincoln Square, above the restaurants and cinema.",
       "l": 3,
       "pr": "$250–450",
-      "t": []
+      "t": [],
+      "osm_q": "Westin Bellevue"
      },
      {
       "id": "bellevue-stay-bellevue-club-hotel",
@@ -1169,7 +1183,8 @@
       "pr": "$300–450",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "Bellevue Club"
      },
      {
       "id": "bellevue-stay-w-bellevue",
@@ -1194,7 +1209,8 @@
       "pr": "$350–600",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "InterContinental"
      }
     ],
     "indoor": [
@@ -1210,7 +1226,7 @@
       ],
       "q": "Bellevue Square, Bellevue, WA",
       "top": 1,
-      "osm_src": "manual"
+      "osm_q": "Bellevue Square"
      },
      {
       "id": "bellevue-indoor-kidsquest-children-s-museum",
@@ -1251,7 +1267,8 @@
       "pr": "About $20–35 per person",
       "t": [
        "fam"
-      ]
+      ],
+      "osm_q": "Lucky Strike"
      },
      {
       "id": "bellevue-indoor-crossroads-bellevue",
@@ -1405,7 +1422,8 @@
       "pr": "$13–20",
       "t": [
        "icon"
-      ]
+      ],
+      "osm_q": "Shakabrah"
      },
      {
       "id": "tacoma-breakfast-old-milwaukee-cafe",
@@ -1454,7 +1472,7 @@
        "quick"
       ],
       "q": "Anthem Coffee, 1911 Pacific Ave, Tacoma, WA",
-      "osm_src": "manual"
+      "osm_q": "Anthem Coffee"
      },
      {
       "id": "tacoma-breakfast-bluebeard-coffee-roasters",
@@ -1557,7 +1575,7 @@
        "fam"
       ],
       "q": "Duke's Seafood, 3327 Ruston Way, Tacoma, WA",
-      "osm_src": "manual"
+      "osm_q": "Duke's Seafood"
      },
      {
       "id": "tacoma-eat-over-the-moon-cafe",
@@ -1569,7 +1587,8 @@
       "t": [
        "date",
        "res"
-      ]
+      ],
+      "osm_q": "Over the Moon"
      },
      {
       "id": "tacoma-eat-asado",
@@ -1669,7 +1688,8 @@
       "t": [
        "view"
       ],
-      "q": "Silver Cloud Hotel Tacoma at Point Ruston Waterfront, Tacoma, WA"
+      "q": "Silver Cloud Hotel Tacoma at Point Ruston Waterfront, Tacoma, WA",
+      "osm_q": "Silver Cloud Hotel"
      }
     ],
     "indoor": [
@@ -1688,7 +1708,9 @@
       "ok": 1,
       "osm": "W24656705",
       "ad": "1801 Dock Street, Tacoma, WA 98402",
-      "web": "https://www.museumofglass.org/"
+      "web": "https://www.museumofglass.org/",
+      "hours": "We-Su 10:00-17:00",
+      "hours_src": "manual"
      },
      {
       "id": "tacoma-indoor-lemay-america-s-car-museum",
@@ -1773,7 +1795,8 @@
       "t": [
        "quick"
       ],
-      "q": "Union Station, 1717 Pacific Ave, Tacoma, WA"
+      "q": "Union Station, 1717 Pacific Ave, Tacoma, WA",
+      "osm_q": "Union Station"
      },
      {
       "id": "tacoma-indoor-emerald-queen-casino",
@@ -1836,7 +1859,7 @@
       ],
       "q": "Paradise, Mount Rainier National Park, WA",
       "top": 1,
-      "osm_src": "manual"
+      "osm_q": "Henry M. Jackson Memorial Visitor Center"
      },
      {
       "id": "tacoma-outdoor-point-defiance-zoo-and-aquarium",
@@ -1875,7 +1898,8 @@
        "view",
        "fam"
       ],
-      "q": "Dune Peninsula at Point Defiance Park, Tacoma, WA"
+      "q": "Dune Peninsula at Point Defiance Park, Tacoma, WA",
+      "osm_q": "Dune Peninsula"
      },
      {
       "id": "tacoma-outdoor-wright-park",
@@ -1982,7 +2006,8 @@
       "t": [
        "quick"
       ],
-      "osm_src": "manual"
+      "osm_q": "Olympia Coffee Roasting",
+      "q": "Olympia Coffee Roasting, 600 4th Ave E, Olympia, WA"
      },
      {
       "id": "olympia-breakfast-left-bank-pastry",
@@ -2051,7 +2076,8 @@
       "t": [
        "date",
        "res"
-      ]
+      ],
+      "osm_q": "Dockside Bistro"
      },
      {
       "id": "olympia-eat-basilico-ristorante",
@@ -2076,7 +2102,8 @@
       "pr": "$16–26",
       "t": [
        "fam"
-      ]
+      ],
+      "osm_q": "Well 80"
      },
      {
       "id": "olympia-eat-lemon-grass-restaurant",
@@ -2086,7 +2113,7 @@
       "l": 2,
       "pr": "$18–28",
       "t": [],
-      "osm_src": "manual"
+      "osm_q": "Lemon Grass"
      },
      {
       "id": "olympia-eat-old-school-pizzeria",
@@ -2152,7 +2179,8 @@
       "d": "Walkable to the Capitol and restaurants.",
       "l": 2,
       "pr": "$160–240",
-      "t": []
+      "t": [],
+      "osm_q": "Hilton Garden Inn"
      },
      {
       "id": "olympia-stay-doubletree-by-hilton-olympia",
@@ -2177,7 +2205,8 @@
       "pr": "$170–260",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "Swantown Inn"
      },
      {
       "id": "olympia-stay-alderbrook-resort-and-spa",
@@ -2271,7 +2300,8 @@
       "t": [
        "a21"
       ],
-      "q": "Nisqually Red Wind Casino, Olympia, WA"
+      "q": "Nisqually Red Wind Casino, Olympia, WA",
+      "osm_q": "Red Wind Casino"
      }
     ],
     "outdoor": [
@@ -2327,7 +2357,8 @@
       "l": 0,
       "pr": "Free",
       "t": [],
-      "q": "Heritage Park, Olympia, WA"
+      "q": "Heritage Park, Olympia, WA",
+      "osm_q": "Heritage Park"
      },
      {
       "id": "olympia-outdoor-squaxin-park",
@@ -2404,7 +2435,8 @@
       "pr": "$6–14",
       "t": [
        "quick"
-      ]
+      ],
+      "osm_q": "Argonaut"
      },
      {
       "id": "leavenworth-breakfast-pavz-cafe-bistro",
@@ -2413,7 +2445,8 @@
       "d": "Sweet and savory crepes.",
       "l": 2,
       "pr": "$14–22",
-      "t": []
+      "t": [],
+      "osm_q": "Pavz"
      },
      {
       "id": "leavenworth-breakfast-o-grady-s-pantry",
@@ -2507,7 +2540,8 @@
       "pr": "$16–26",
       "t": [
        "view"
-      ]
+      ],
+      "osm_q": "Yodelin"
      },
      {
       "id": "leavenworth-eat-icicle-brewing-company",
@@ -2516,7 +2550,8 @@
       "d": "Local brewery taproom with a patio and snacks.",
       "l": 2,
       "pr": "$14–22",
-      "t": []
+      "t": [],
+      "osm_q": "Icicle Brewing"
      },
      {
       "id": "leavenworth-eat-blewett-brewing",
@@ -2540,7 +2575,8 @@
       "pr": "$10–16",
       "t": [
        "quick"
-      ]
+      ],
+      "osm_q": "Sausage Garten"
      },
      {
       "id": "leavenworth-eat-watershed-cafe",
@@ -2565,7 +2601,8 @@
       "pr": "$40–70",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "Mozart's"
      }
     ],
     "stay": [
@@ -2588,7 +2625,8 @@
       "d": "Outdoorsy budget rooms.",
       "l": 2,
       "pr": "$130–220",
-      "t": []
+      "t": [],
+      "osm_q": "LOGE"
      },
      {
       "id": "leavenworth-stay-enzian-inn",
@@ -2652,7 +2690,8 @@
       "pr": "$600–900",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "Posthotel"
      }
     ],
     "indoor": [
@@ -2668,7 +2707,10 @@
        "icon"
       ],
       "top": 1,
-      "ok": 1
+      "ok": 1,
+      "osm_q": "Nutcracker Museum",
+      "hours": "Mo-Sa 11:00-17:00; Su 11:00-16:30",
+      "hours_src": "manual"
      },
      {
       "id": "leavenworth-indoor-kris-kringl",
@@ -2734,7 +2776,8 @@
        "fam"
       ],
       "q": "Front Street Park, Leavenworth, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Front Street Park"
      },
      {
       "id": "leavenworth-outdoor-waterfront-park-and-blackbird-island",
@@ -2748,7 +2791,8 @@
        "view"
       ],
       "q": "Waterfront Park, Leavenworth, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Waterfront Park"
      },
      {
       "id": "leavenworth-outdoor-leavenworth-adventure-park",
@@ -2775,7 +2819,8 @@
       "t": [
        "fam",
        "res"
-      ]
+      ],
+      "osm_q": "Reindeer Farm"
      },
      {
       "id": "leavenworth-outdoor-tumwater-canyon",
@@ -2788,7 +2833,7 @@
        "view"
       ],
       "q": "Tumwater Canyon, Leavenworth, WA",
-      "osm": "R17164126"
+      "osm_src": "manual"
      },
      {
       "id": "leavenworth-outdoor-icicle-gorge-trail",
@@ -2856,7 +2901,7 @@
      {
       "id": "bellingham-breakfast-mount-bakery-cafe",
       "n": "Mount Bakery Cafe",
-      "a": "Downtown",
+      "a": "Fairhaven",
       "d": "Crepes, Benedicts and Belgian waffles.",
       "l": 2,
       "pr": "$14–22",
@@ -2925,7 +2970,8 @@
        "view",
        "quick"
       ],
-      "q": "Woods Coffee, Boulevard Park, Bellingham, WA"
+      "q": "Woods Coffee, Boulevard Park, Bellingham, WA",
+      "osm_q": "Woods Coffee"
      }
     ],
     "eat": [
@@ -2940,7 +2986,8 @@
        "icon",
        "fam"
       ],
-      "top": 1
+      "top": 1,
+      "osm_q": "Boundary Bay Brewery"
      },
      {
       "id": "bellingham-eat-aslan-brewing-co",
@@ -3030,7 +3077,8 @@
        "view",
        "trip"
       ],
-      "q": "Taylor Shellfish Farms, 2182 Chuckanut Dr, Bow, WA"
+      "q": "Taylor Shellfish Farms, 2182 Chuckanut Dr, Bow, WA",
+      "osm_q": "Taylor Shellfish Farms"
      },
      {
       "id": "bellingham-eat-the-oyster-bar",
@@ -3107,7 +3155,8 @@
       "t": [
        "view",
        "date"
-      ]
+      ],
+      "osm_q": "Chrysalis Inn"
      },
      {
       "id": "bellingham-stay-semiahmoo-resort",
@@ -3146,7 +3195,8 @@
       "pr": "About $10–12 adult",
       "t": [
        "fam"
-      ]
+      ],
+      "osm_q": "Whatcom Museum Lightcatcher"
      },
      {
       "id": "bellingham-indoor-village-books-and-paper-dreams",
@@ -3155,7 +3205,9 @@
       "d": "Three floors of books and gifts.",
       "l": 0,
       "pr": "Free to browse",
-      "t": []
+      "t": [],
+      "osm_q": "Village Books",
+      "q": "Village Books, 1200 11th St, Bellingham, WA"
      },
      {
       "id": "bellingham-indoor-bellingham-farmers-market",
@@ -3209,7 +3261,8 @@
        "fam"
       ],
       "q": "Boulevard Park, Bellingham, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Boulevard Park"
      },
      {
       "id": "bellingham-outdoor-historic-fairhaven",
@@ -3222,7 +3275,8 @@
        "icon"
       ],
       "q": "Fairhaven Village Green, Bellingham, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Fairhaven Village Green"
      },
      {
       "id": "bellingham-outdoor-chuckanut-drive",
@@ -3284,7 +3338,8 @@
        "season",
        "res"
       ],
-      "q": "San Juan Cruises, 355 Harris Ave, Bellingham, WA"
+      "q": "San Juan Cruises, 355 Harris Ave, Bellingham, WA",
+      "osm_q": "San Juan Cruises"
      }
     ]
    }
@@ -3330,7 +3385,8 @@
       "d": "Farmhouse diner and bakery. Lines on weekends.",
       "l": 2,
       "pr": "$14–22",
-      "t": []
+      "t": [],
+      "osm_q": "Chaps"
      },
      {
       "id": "spokane-breakfast-bruncheonette",
@@ -3348,7 +3404,8 @@
       "d": "Retro-modern diner above the river gorge.",
       "l": 2,
       "pr": "$15–22",
-      "t": []
+      "t": [],
+      "osm_q": "Yards Bruncheon"
      },
      {
       "id": "spokane-breakfast-kalico-kitchen",
@@ -3385,7 +3442,8 @@
        "view",
        "date",
        "icon"
-      ]
+      ],
+      "osm_q": "Clinkerdagger's"
      },
      {
       "id": "spokane-eat-anthony-s-at-spokane-falls",
@@ -3396,7 +3454,8 @@
       "pr": "$35–55",
       "t": [
        "view"
-      ]
+      ],
+      "osm_q": "Anthony's"
      },
      {
       "id": "spokane-eat-wild-sage-bistro",
@@ -3407,7 +3466,8 @@
       "pr": "$40–65",
       "t": [
        "date"
-      ]
+      ],
+      "osm_q": "Wild Sage"
      },
      {
       "id": "spokane-eat-italia-trattoria",
@@ -3425,7 +3485,8 @@
       "d": "Mediterranean plates to share.",
       "l": 3,
       "pr": "$25–40",
-      "t": []
+      "t": [],
+      "osm_q": "Baba"
      },
      {
       "id": "spokane-eat-steam-plant-restaurant-and-brew-pub",
@@ -3437,7 +3498,8 @@
       "t": [
        "icon",
        "fam"
-      ]
+      ],
+      "osm_q": "Steam Plant"
      },
      {
       "id": "spokane-eat-the-flying-goat",
@@ -3471,7 +3533,8 @@
       "t": [
        "quick",
        "icon"
-      ]
+      ],
+      "osm_q": "Domini"
      },
      {
       "id": "spokane-eat-dick-s-hamburgers",
@@ -3526,7 +3589,8 @@
       "d": "Stylish rooms in a restored historic hotel.",
       "l": 2,
       "pr": "$150–230",
-      "t": []
+      "t": [],
+      "osm_q": "Hotel Indigo"
      },
      {
       "id": "spokane-stay-oxford-suites-spokane-downtown",
@@ -3585,7 +3649,10 @@
       "t": [
        "fam"
       ],
-      "ok": 1
+      "ok": 1,
+      "osm_q": "Northwest Museum of Arts and Culture",
+      "hours": "Tu-Su 10:00-17:00",
+      "hours_src": "manual"
      },
      {
       "id": "spokane-indoor-looff-carrousel",
@@ -3658,7 +3725,8 @@
        "view"
       ],
       "q": "Huntington Park, Spokane, WA",
-      "top": 1
+      "top": 1,
+      "osm_q": "Huntington Park"
      },
      {
       "id": "spokane-outdoor-manito-park",
@@ -3682,7 +3750,8 @@
       "t": [
        "view",
        "fam"
-      ]
+      ],
+      "osm_q": "SkyRide"
      },
      {
       "id": "spokane-outdoor-centennial-trail",
@@ -3720,7 +3789,8 @@
        "season",
        "trip"
       ],
-      "q": "Green Bluff, Colbert, WA"
+      "q": "Green Bluff, Colbert, WA",
+      "osm_src": "manual"
      },
      {
       "id": "spokane-outdoor-arbor-crest-wine-cellars",
@@ -3786,7 +3856,8 @@
       "pr": "$12–18",
       "t": [
        "fam"
-      ]
+      ],
+      "osm_q": "Peachtree"
      },
      {
       "id": "vancouver-breakfast-syrup-trap",
@@ -3847,7 +3918,8 @@
       "t": [
        "view"
       ],
-      "q": "Twigs Bistro, Vancouver Waterfront, Vancouver, WA"
+      "q": "Twigs Bistro, Vancouver Waterfront, Vancouver, WA",
+      "osm_q": "Twigs Bistro"
      },
      {
       "id": "vancouver-eat-maryhill-winery-tasting-room-and-bistro",
@@ -3859,7 +3931,8 @@
       "t": [
        "view"
       ],
-      "q": "Maryhill Winery, Vancouver Waterfront, Vancouver, WA"
+      "q": "Maryhill Winery, Vancouver Waterfront, Vancouver, WA",
+      "osm_q": "Maryhill Winery"
      },
      {
       "id": "vancouver-eat-stack-571-burger-and-whiskey-bar",
@@ -3871,7 +3944,8 @@
       "t": [
        "fam"
       ],
-      "q": "Stack 571, Vancouver Waterfront, Vancouver, WA"
+      "q": "Stack 571, Vancouver Waterfront, Vancouver, WA",
+      "osm_q": "Stack 571"
      },
      {
       "id": "vancouver-eat-grays-at-the-park",
@@ -3880,7 +3954,8 @@
       "d": "Northwest restaurant facing Esther Short Park.",
       "l": 3,
       "pr": "$28–45",
-      "t": []
+      "t": [],
+      "osm_q": "Grays"
      },
      {
       "id": "vancouver-eat-amaro-s-table",
@@ -3909,7 +3984,8 @@
       "pr": "$18–28",
       "t": [
        "fam"
-      ]
+      ],
+      "osm_q": "Rally Pizza"
      },
      {
       "id": "vancouver-eat-little-conejo",
@@ -3933,7 +4009,8 @@
        "quick",
        "icon",
        "fam"
-      ]
+      ],
+      "osm_src": "manual"
      }
     ],
     "stay": [
@@ -3945,7 +4022,8 @@
       "l": 1,
       "pr": "$120–180",
       "t": [],
-      "q": "Comfort Inn & Suites, 401 E 13th St, Vancouver, WA"
+      "q": "Comfort Inn & Suites, 401 E 13th St, Vancouver, WA",
+      "osm_q": "Comfort Inn"
      },
      {
       "id": "vancouver-stay-heathman-lodge",
@@ -3965,7 +4043,8 @@
       "d": "On Esther Short Park, a few blocks from the waterfront.",
       "l": 2,
       "pr": "$170–270",
-      "t": []
+      "t": [],
+      "osm_q": "Hilton Vancouver"
      },
      {
       "id": "vancouver-stay-ac-hotel-vancouver-waterfront",
@@ -3988,7 +4067,8 @@
       "t": [
        "view",
        "date"
-      ]
+      ],
+      "osm_q": "Hotel Indigo"
      },
      {
       "id": "vancouver-stay-ilani-casino-resort-hotel",
@@ -4000,7 +4080,8 @@
       "t": [
        "trip"
       ],
-      "q": "ilani Casino Resort, Ridgefield, WA"
+      "q": "ilani Casino Resort, Ridgefield, WA",
+      "osm_q": "ilani"
      }
     ],
     "indoor": [
@@ -4061,7 +4142,8 @@
        "a21",
        "trip"
       ],
-      "q": "ilani Casino Resort, Ridgefield, WA"
+      "q": "ilani Casino Resort, Ridgefield, WA",
+      "osm_q": "ilani"
      }
     ],
     "outdoor": [
@@ -4150,7 +4232,8 @@
       "t": [
        "view"
       ],
-      "q": "Wintler Community Park, Vancouver, WA"
+      "q": "Wintler Community Park, Vancouver, WA",
+      "osm_q": "Wintler Community Park"
      },
      {
       "id": "vancouver-outdoor-ridgefield-national-wildlife-refuge",
